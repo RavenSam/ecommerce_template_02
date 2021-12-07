@@ -4,11 +4,10 @@ import { HeartIcon } from "@heroicons/react/outline"
 
 const sizes = ["xs", "s", "m", "l", "xl"]
 
-export default function ProductInfo() {
-   const [productColor, setProductColor] = useState("#ec4899")
+export default function ProductInfo({ productColor }) {
    const [selectedSize, setSelectedSize] = useState("m")
    const [qty, setQty] = useState(1)
-   const [isOnWhishlist, setIsOnWhishlist] = useState(true)
+   const [isOnWhishlist, setIsOnWhishlist] = useState(false)
 
    return (
       <>
@@ -17,9 +16,9 @@ export default function ProductInfo() {
 
             <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor }} />
 
-            <p className="text-gray-500 ">
+            <p className="text-gray-500 p-2">
                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nostrum nisi voluptate dolore, voluptas
-               perferendis, adipisci nesciunt eaque nam porro blanditiis tenetur eius facere obcaecati!
+               perferendis, adipisci nesciunt eaque blanditiis.
             </p>
 
             <div className="flex items-center space-x-2 mt-2">
@@ -53,13 +52,19 @@ export default function ProductInfo() {
             <h3 className="font-semibold">Quantity</h3>
 
             <div className="flex items-center  mt-4 space-x-4">
-               <button className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90" onClick={()=> qty > 0 && setQty(qty-1)} >
+               <button
+                  className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
+                  onClick={() => qty > 1 && setQty(qty - 1)}
+               >
                   -
                </button>
 
                <span className="min-w-[2rem] text-center font-semibold">{qty}</span>
 
-               <button className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90" onClick={()=> qty < 10 && setQty(qty+1)}>
+               <button
+                  className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
+                  onClick={() => qty < 10 && setQty(qty + 1)}
+               >
                   +
                </button>
             </div>
