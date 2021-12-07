@@ -1,4 +1,4 @@
-import "tailwindcss/tailwind.css"
+import "../styles/globals.css"
 import { Layout } from "../components"
 
 export default function MyApp({ Component, pageProps }) {

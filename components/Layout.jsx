@@ -1,11 +1,14 @@
+// Components
 import { Navbar } from "."
 
 export default function Layout({ children }) {
    return (
       <>
-         <Navbar />
+         <div className="font-poppins">
+            <Navbar />
 
-         {children}
+            {children}
+         </div>
       </>
    )
 }
