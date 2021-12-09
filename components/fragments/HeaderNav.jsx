@@ -1,22 +1,7 @@
 import Link from "next/link"
 import { ChevronDownIcon } from "@heroicons/react/outline"
 import { useState } from "react"
-
-const navLinks = [
-   { name: "home", url: "/" },
-   {
-      name: "categories",
-      url: "#",
-      children: [
-         { name: "all categories", url: "#" },
-         { name: "men", url: "#" },
-         { name: "women", url: "#" },
-         { name: "kids", url: "#" },
-      ],
-   },
-   { name: "about", url: "#", children: [] },
-   { name: "contact", url: "#" },
-]
+import { navLinks } from "../../utils/headerItems"
 
 export default function HeaderNav() {
    const [menuOpen, setMenuOpen] = useState(false)
@@ -53,7 +38,7 @@ export default function HeaderNav() {
                         {link.children.map((item) => (
                            <div key={item.name} className="">
                               <Link href={item.url}>
-                                 <a className="block capitalize px-4 py-2 tracking-wider text-sm font-semibold rounded-sm  text-gray-500 hover:text-black hover:bg-gray-200">
+                                 <a className="block capitalize px-4 py-2 tracking-wider text-sm font-semibold rounded-sm  text-gray-500 hover:text-black hover:bg-gray-100">
                                     {item.name}
                                  </a>
                               </Link>

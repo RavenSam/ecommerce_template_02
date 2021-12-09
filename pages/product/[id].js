@@ -14,11 +14,11 @@ export default function Product() {
          </Head>
 
          <div className="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 mt-8">
-            <div className=" ">
+            <div className="px-4 ">
                <ProductGallery colors={colors} productColor={productColor} setProductColor={setProductColor} />
             </div>
 
-            <div className=" ">
+            <div className="px-4">
                <ProductInfo productColor={productColor} />
             </div>
          </div>

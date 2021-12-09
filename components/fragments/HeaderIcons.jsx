@@ -1,6 +1,7 @@
 import { SearchIcon, UserIcon, ShoppingCartIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 import { useState } from "react"
+import NavDrawer from "../NavDrawer"
 
 export default function HeaderIcons() {
    const [cartLength, setCartLength] = useState(1)
@@ -30,6 +31,8 @@ export default function HeaderIcons() {
                )}
             </a>
          </Link>
+
+         <NavDrawer />
       </div>
    )
 }

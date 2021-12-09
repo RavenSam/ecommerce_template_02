@@ -33,13 +33,15 @@ export default function ProductInfo({ productColor }) {
                {sizes.map((size, i) => (
                   <button
                      key={i}
-                     className="relative w-10 h-10 border border-gray-300 uppercase font-semibold rounded-md transform transition duration-200 ease-in-out hover:scale-125 hover:shadow-lg"
+                     className={`relative w-10 h-10 border border-gray-300 uppercase font-semibold rounded-lg transform transition duration-200 ease-in-out  ${
+                        size === selectedSize ? "border-gray-500" : "hover:scale-125 hover:elevation-4"
+                     }`}
                      onClick={() => setSelectedSize(size)}
                   >
                      {size}
                      {size === selectedSize && (
                         <span
-                           className="w-3 h-3  absolute -top-1 -right-1 rounded-full shadow-lg"
+                           className="w-3 h-3  absolute -top-1 -right-1 rounded-full elevation-3"
                            style={{ backgroundColor: productColor }}
                         />
                      )}
@@ -53,7 +55,7 @@ export default function ProductInfo({ productColor }) {
 
             <div className="flex items-center  mt-4 space-x-4">
                <button
-                  className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
+                  className="w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
                   onClick={() => qty > 1 && setQty(qty - 1)}
                >
                   -
@@ -62,7 +64,7 @@ export default function ProductInfo({ productColor }) {
                <span className="min-w-[2rem] text-center font-semibold">{qty}</span>
 
                <button
-                  className="w-10 h-10 text-xl font-semibold border border-gray-600 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
+                  className="w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90"
                   onClick={() => qty < 10 && setQty(qty + 1)}
                >
                   +
@@ -81,7 +83,7 @@ export default function ProductInfo({ productColor }) {
 
             <button
                title={isOnWhishlist ? "Remove From The Whishlist" : "Add To The Wishlist"}
-               className="w-8 h-8 md:w-10 md:h-10 p-1 rounded-full  transform transition-all duration-200 ease-in-out hover:scale-125 md:hover:shadow-lg"
+               className="w-8 h-8 md:w-10 md:h-10 p-1 rounded-full  transform transition-all duration-200 ease-in-out hover:scale-125 md:hover:elevation-4"
                onClick={() => setIsOnWhishlist(!isOnWhishlist)}
             >
                {isOnWhishlist ? <HeartFull /> : <HeartIcon />}

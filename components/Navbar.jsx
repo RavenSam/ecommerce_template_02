@@ -3,12 +3,14 @@ import HeaderNav from "./fragments/HeaderNav"
 
 export default function Navbar() {
    return (
-      <header className="lg:container lg:mx-auto flex items-center justify-between py-4 px-2">
+      <header className="lg:container lg:mx-auto flex items-center justify-between px-2">
          <div className="">
-            <h2 className="text-2xl uppercase font-bold tracking-wide">Logo</h2>
+            <h2 className="text-xl md:text-3xl uppercase font-bold tracking-widest bg-black text-white p-4 rounded-b-md ">
+               Logo
+            </h2>
          </div>
 
-         <nav>
+         <nav className="hidden md:block">
             <HeaderNav />
          </nav>
 
