@@ -6,7 +6,7 @@ import { Transition } from "@headlessui/react"
 import { navLinks } from "../utils/headerItems"
 
 export default function NavDrawer() {
-   const [open, setOpen] = useState(true)
+   const [open, setOpen] = useState(false)
 
    const handleClick = () => console.log("Clicked...")
 
