@@ -3,3 +3,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+   .btn {
+      @apply text-sm lg:text-base uppercase font-semibold px-5 md:px-8 py-2 rounded-sm;
+   }
+
+   .btn-1 {
+      @apply btn bg-black text-white transition-all duration-200 ease-in-out  md:hover:tracking-[.2rem] active:scale-90;
+   }
+
+   .btn-2 {
+      @apply btn border border-black transition-all duration-200 ease-in-out md:hover:tracking-[.2rem] active:scale-90;
+   }
+
+   .btn-rounded {
+      @apply w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90;
+   }
+}

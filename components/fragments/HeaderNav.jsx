@@ -21,7 +21,7 @@ export default function HeaderNav() {
                   onMouseLeave={() => link.children?.length > 0 && setMenuOpen(false)}
                >
                   <Link href={link.url}>
-                     <a className="capitalize px-2 lg:px-4 py-2 tracking-wider text-sm font-semibold text-gray-500 hover:text-black">
+                     <a className="capitalize px-2 lg:px-4 py-2 tracking-wider text-sm font-bold text-gray-500 hover:text-black">
                         {link.name}
                         {link.children?.length > 0 && <ChevronDownIcon className="h-4 w-4 inline ml-1" />}
                      </a>

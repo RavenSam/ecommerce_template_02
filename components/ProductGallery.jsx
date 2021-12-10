@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Image from "next/image"
 
 export default function ProductGallery({ colors, productColor, setProductColor }) {
    return (
@@ -16,7 +17,11 @@ export default function ProductGallery({ colors, productColor, setProductColor }
             ))}
          </div>
 
-         <div className="flex-grow bg-green-500">2</div>
+         <div className="flex-grow bg-[#f3f3f3] rounded-md">
+            <div className="relative w-full h-[400px] mx-auto">
+               <Image src="/products/shirt.png" layout="fill" objectFit="contain" quality={100} />
+            </div>
+         </div>
       </div>
    )
 }
