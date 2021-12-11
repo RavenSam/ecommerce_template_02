@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { HeartIcon as HeartFull } from "@heroicons/react/solid"
+import { HeartIcon as HeartFull, StarIcon } from "@heroicons/react/solid"
 import { HeartIcon } from "@heroicons/react/outline"
 
 const sizes = ["xs", "s", "m", "l", "xl"]
@@ -16,14 +16,28 @@ export default function ProductInfo({ productColor }) {
 
             <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor }} />
 
-            <p className="text-gray-500 p-2">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nostrum nisi voluptate dolore, voluptas
-               perferendis, adipisci nesciunt eaque blanditiis.
-            </p>
+            <div className="flex items-center mt-2 py-2">
+               <div className="flex items-center">
+                  {[0, 1, 2, 3, 4].map((rating) => (
+                     <StarIcon
+                        key={rating}
+                        className={`h-5 w-5 flex-shrink-0 ${4 > rating ? "text-gray-900" : "text-gray-300"}`}
+                        aria-hidden="true"
+                     />
+                  ))}
+               </div>
+
+               <span className="capitalize font-semibold ml-4 text-sm text-gray-600">4 reviews</span>
+            </div>
 
             <div className="flex items-center space-x-2 mt-2">
                <h2 className="text-lg md:text-2xl lg:text-3xl font-bold">$19.99</h2>
             </div>
+
+            <p className="text-gray-500 mt-2">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nostrum nisi voluptate dolore, voluptas
+               perferendis, adipisci nesciunt eaque blanditiis.
+            </p>
          </div>
 
          <div className="mt-8">
