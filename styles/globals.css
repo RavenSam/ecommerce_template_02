@@ -17,7 +17,24 @@
       @apply btn border border-black transition-all duration-200 ease-in-out md:hover:tracking-[.2rem] active:scale-90;
    }
 
+   .btn-3 {
+      @apply btn capitalize bg-gray-300  transition-all duration-200 ease-in-out hover:bg-black hover:text-white active:scale-90;
+   }
+
    .btn-rounded {
       @apply w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90;
    }
+}
+
+.slick-prev::before {
+   content: "\003008";
+}
+
+.slick-next::before {
+   content: "\003009";
+}
+
+.slick-prev::before,
+.slick-next::before {
+   color: black !important;
 }

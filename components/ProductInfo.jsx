@@ -27,7 +27,9 @@ export default function ProductInfo({ productColor }) {
                   ))}
                </div>
 
-               <span className="capitalize font-semibold ml-4 text-sm text-gray-600">4 reviews</span>
+               <a href="#reviews" className="capitalize font-semibold ml-4 text-sm text-gray-600">
+                  4 reviews
+               </a>
             </div>
 
             <div className="flex items-center space-x-2 mt-2">
