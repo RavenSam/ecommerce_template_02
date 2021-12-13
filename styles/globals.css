@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer components {
+   .h2 {
+      @apply text-2xl md:text-3xl font-bold py-4 mb-4 capitalize;
+   }
+
    .btn {
       @apply text-sm lg:text-base uppercase font-semibold px-5 md:px-8 py-2 rounded-sm;
    }

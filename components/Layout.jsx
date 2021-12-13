@@ -1,5 +1,5 @@
 // Components
-import { Navbar } from "."
+import { Footer, Navbar } from "."
 
 export default function Layout({ children }) {
    return (
@@ -8,6 +8,8 @@ export default function Layout({ children }) {
             <Navbar />
 
             {children}
+
+            <Footer />
          </div>
       </>
    )
