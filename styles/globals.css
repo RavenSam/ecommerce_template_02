@@ -5,8 +5,12 @@
 @tailwind utilities;
 
 @layer components {
+   .h1 {
+      @apply text-3xl lg:text-4xl  capitalize font-bold font-roboto;
+   }
+
    .h2 {
-      @apply text-2xl md:text-3xl font-bold py-4 mb-4 capitalize;
+      @apply text-2xl md:text-3xl font-bold py-4 mb-4 capitalize font-roboto;
    }
 
    .btn {
@@ -27,6 +31,10 @@
 
    .btn-rounded {
       @apply w-10 h-10 text-xl font-semibold border border-gray-300 text-gray-600 rounded-full transform  transition duration-100 ease-in-out hover:bg-black hover:text-white hover:border-black active:scale-90;
+   }
+
+   .input {
+      @apply bg-gray-200 text-black px-4 py-2 rounded-sm  focus:outline-none border-l-4 border-transparent focus:border-black;
    }
 }
 

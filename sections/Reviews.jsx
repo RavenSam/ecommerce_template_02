@@ -1,8 +1,8 @@
-import Review from "./Review"
+import Review from "../components/Review"
 
 export default function Reviews({ reviews }) {
    return (
-      <div className="mt-10 py-5 " id="reviews">
+      <div className=" " id="reviews">
          <h2 className="h2">Reviews</h2>
 
          <div className="flex flex-col md:flex-row items-center md:items-start   ">

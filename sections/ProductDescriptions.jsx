@@ -3,7 +3,7 @@ import { ChevronDownIcon } from "@heroicons/react/outline"
 
 export default function ProductDescriptions() {
    return (
-      <div className="mt-16 py-5">
+      <div className="">
          <div className="w-full max-w-xl mx-auto  space-y-2">
             <Disclosure>
                {({ open }) => (

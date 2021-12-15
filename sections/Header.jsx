@@ -1,7 +1,7 @@
-import HeaderIcons from "./fragments/HeaderIcons"
-import HeaderNav from "./fragments/HeaderNav"
+import HeaderIcons from "../components/fragments/HeaderIcons"
+import HeaderNav from "../components/fragments/HeaderNav"
 
-export default function Navbar() {
+export default function Header() {
    return (
       <header className="lg:container lg:mx-auto flex items-center justify-between px-2">
          <div className="">

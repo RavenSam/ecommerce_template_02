@@ -1,11 +1,10 @@
-// Components
-import { Footer, Navbar } from "."
+import { Footer, Header } from "../sections"
 
 export default function Layout({ children }) {
    return (
       <>
          <div className="font-poppins">
-            <Navbar />
+            <Header />
 
             {children}
 

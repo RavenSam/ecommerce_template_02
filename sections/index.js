@@ -1,0 +1,6 @@
+export { default as Footer } from "./Footer"
+export { default as Header } from "./Header"
+export { default as Reviews } from "./Reviews"
+export { default as SimilarProduct } from "./SimilarProduct"
+export { default as ProductDescriptions } from "./ProductDescriptions"
+export { default as ProductDetails } from "./ProductDetails"

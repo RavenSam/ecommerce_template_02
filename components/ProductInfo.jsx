@@ -11,8 +11,8 @@ export default function ProductInfo({ productColor }) {
 
    return (
       <>
-         <div>
-            <h1 className=" text-xl md:text-3xl lg:text-4xl  capitalize font-bold font-roboto">your product name</h1>
+         <div className="mt-4 md:mt-0">
+            <h1 className=" h1">your product name</h1>
 
             <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor }} />
 
@@ -82,7 +82,7 @@ export default function ProductInfo({ productColor }) {
             </div>
          </div>
 
-         <div className="flex items-center mt-8 space-x-4 py-4">
+         <div className="flex items-center mt-8 space-x-4 ">
             <button className="btn-1">buy now</button>
 
             <button className="btn-2">add to cart</button>
