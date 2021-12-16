@@ -63,7 +63,7 @@ export default function LoginForm() {
                </Link>
             </div>
 
-            <button type="submit" className="btn-1 ">
+            <button type="submit" className="btn-1 w-full">
                Login
             </button>
             <div className="text-sm font-medium text-gray-500 ">

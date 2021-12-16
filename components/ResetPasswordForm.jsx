@@ -8,7 +8,7 @@ export default function ResetPasswordForm() {
 
             <p className="text-gray-500">Confirm your email and we'll send the instrictions</p>
 
-            <div>
+            <div className="">
                <label for="email" className="text-sm font-medium text-gray-500 block mb-2 ">
                   <MailIcon className="h-6 w-6 inline mr-1" /> Your email
                </label>
@@ -22,7 +22,7 @@ export default function ResetPasswordForm() {
                />
             </div>
 
-            <button type="submit" className="btn-1 ">
+            <button type="submit" className="btn-1 w-full">
                Send
             </button>
          </form>

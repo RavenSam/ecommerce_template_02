@@ -1,6 +1,5 @@
 import { Fragment, useState, useRef } from "react"
 import Link from "next/link"
-import Head from "next/head"
 import { ChevronDownIcon, MenuAlt3Icon, SearchIcon, XIcon } from "@heroicons/react/outline"
 import { Transition, Dialog } from "@headlessui/react"
 import { navLinks } from "../utils/headerItems"
@@ -14,8 +13,6 @@ export default function NavDrawer() {
 
    return (
       <>
-         {/* <Head><style>{`body{overflow-y:${open && "hidden"}}`}</style></Head> */}
-
          <button
             className="rounded-full inline-block md:hidden w-10 h-10 p-2 transition duration-200 hover:bg-gray-200 active:bg-gray-300"
             onClick={() => setOpen(!open)}
@@ -35,11 +32,11 @@ export default function NavDrawer() {
                <div className="absolute inset-0 overflow-hidden">
                   <Transition.Child
                      as={Fragment}
-                     enter="ease-in-out duration-500"
+                     enter="ease-in-out duration-700"
                      enterFrom="opacity-0"
-                     enterTo="opacity-100"
-                     leave="ease-in-out duration-500"
-                     leaveFrom="opacity-100"
+                     enterTo="opacity-400"
+                     leave="ease-in-out duration-700"
+                     leaveFrom="opacity-400"
                      leaveTo="opacity-0"
                   >
                      <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity backdrop-blur-sm" />
@@ -48,10 +45,10 @@ export default function NavDrawer() {
                   <div className="fixed inset-y-0 left-0  max-w-full flex font-poppins">
                      <Transition.Child
                         as={Fragment}
-                        enter="transform transition ease-in-out duration-500 sm:duration-700"
+                        enter="transform transition ease-in-out duration-500 "
                         enterFrom="-translate-x-full"
                         enterTo="translate-x-0"
-                        leave="transform transition ease-in-out duration-500 sm:duration-700"
+                        leave="transform transition ease-in-out duration-500 "
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                      >
@@ -73,7 +70,7 @@ export default function NavDrawer() {
                                  <hr className="mt-8 mb-4 border-2 rounded-full w-1/2 border-black" />
 
                                  <div className=" py-4 ">
-                                    <form className="flex items-center  h-14 rounded-md overflow-hidden">
+                                    <form className="flex items-center  h-12 rounded-md overflow-hidden">
                                        <input type="text" className="w-[85%] h-full input" placeholder="Search..." />
 
                                        <button className="bg-black w-[15%] h-full text-white">
@@ -140,66 +137,3 @@ export default function NavDrawer() {
       </>
    )
 }
-
-// <Transition
-//    as={Fragment}
-//    show={open}
-//    enter="transform transition ease-in-out duration-500 sm:duration-700"
-//    enterFrom="-translate-x-full"
-//    enterTo="translate-x-0"
-//    leave="transform transition ease-in-out duration-500 sm:duration-700"
-//    leaveFrom="translate-x-0"
-//    leaveTo="-translate-x-full"
-// >
-//    <nav className="absolute top-0 left-0 md:hidden z-20  h-screen bg-white backdrop-blur-md w-full sm:w-[50%] bg-opacity-95 ">
-//       {/* Overlay */}
-//       <div
-//          className="absolute top-0 right-0 hidden sm:block h-screen w-[100%] bg-gray-700 bg-opacity-70  transform translate-x-full delay-500"
-//          onClick={() => setOpen(false)}
-//       />
-
-// <ul className="p-4">
-//    {navLinks.map((link) => (
-//       <Fragment key={link.name}>
-//          <li className="flex items-center justify-between text-gray-500 rounded-sm px-2 lg:px-4 hover:text-black hover:bg-gray-200 hover:bg-opacity-60">
-//             <Link href={link.url}>
-//                <a
-//                   className="capitalize block w-full  py-2 tracking-wider text-base font-semibold  "
-//                   onClick={() => setOpen(false)}
-//                >
-//                   {link.name}
-//                </a>
-//             </Link>
-//             {link.children?.length > 0 && (
-//                <button
-//                   className={` w-10 h-10 p-2 ${showChild && "transform rotate-180"}`}
-//                   onClick={handleClick}
-//                >
-//                   <ChevronDownIcon />
-//                </button>
-//             )}
-//          </li>
-//          {link.children?.length > 0 && (
-//             <Transition show={showChild} as="ul" className="border-l-2 border-black">
-//                {link.children?.map((item) => (
-//                   <li
-//                      key={item.name}
-//                      className="text-gray-500 text-sm pl-4 px-2 hover:text-black rounded-sm hover:bg-gray-200 hover:bg-opacity-60"
-//                   >
-//                      <Link href={item.url}>
-//                         <a
-//                            className="capitalize block w-full py-1 tracking-wider  font-semibold  "
-//                            onClick={() => setOpen(false)}
-//                         >
-//                            {item.name}
-//                         </a>
-//                      </Link>
-//                   </li>
-//                ))}
-//             </Transition>
-//          )}
-//       </Fragment>
-//    ))}
-// </ul>
-//    </nav>
-// </Transition>
