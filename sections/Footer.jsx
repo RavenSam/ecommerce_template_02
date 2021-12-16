@@ -5,7 +5,7 @@ const legals = ["claim", "privacy", "terms"]
 
 export default function Footer() {
    return (
-      <footer className="bg-gray-800 text-white px-4 py-12 lg:px-24 mt-12">
+      <footer className="bg-gray-800 text-white px-4 py-12 lg:px-24 mt-24">
          <div className="lg:container  lg:mx-auto">
             <div className="flex  justify-between ">
                <ul>
