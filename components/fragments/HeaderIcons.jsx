@@ -1,8 +1,7 @@
-import { UserIcon, ShoppingCartIcon } from "@heroicons/react/outline"
+import { ShoppingCartIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 import { useState } from "react"
-import NavDrawer from "../NavDrawer"
-import SearchForm from "../SearchForm"
+import { AvatarIcon, SearchForm, NavDrawer } from "../"
 
 export default function HeaderIcons() {
    const [cartLength, setCartLength] = useState(1)
@@ -23,11 +22,7 @@ export default function HeaderIcons() {
             </a>
          </Link>
 
-         <Link href="#">
-            <a className="rounded-full inline-block w-10 h-10 p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 ">
-               <UserIcon />
-            </a>
-         </Link>
+         <AvatarIcon />
 
          <NavDrawer />
       </div>

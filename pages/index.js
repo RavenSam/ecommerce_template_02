@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Link from "next/link"
+import { Hero } from "../sections"
 
 export default function Home() {
    return (
@@ -8,21 +8,9 @@ export default function Home() {
             <title>Home</title>
          </Head>
 
-         <div className="flex flex-col items-center justify-center min-h-screen py-2">
-            <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-               <h1 className="text-6xl font-bold">Ecommerce Template #02</h1>
-
-               <p className="mt-5 text-xl">Available Pages</p>
-
-               <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-                  <Link href="/product/1">
-                     <a className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 hover:border-blue-600 focus:text-blue-600">
-                        <h3 className="text-2xl font-bold">Product Page</h3>
-                     </a>
-                  </Link>
-               </div>
-            </main>
-         </div>
+         <section className="w-full max-w-7xl lg:mx-auto mt-4 p-2">
+            <Hero />
+         </section>
       </>
    )
 }

@@ -68,12 +68,11 @@ export default function NavDrawer() {
                                  </div>
 
                                  <hr className="mt-8 mb-4 border-2 rounded-full w-1/2 border-black" />
-
                                  <div className=" py-4 ">
-                                    <form className="flex items-center  h-12 rounded-md overflow-hidden">
-                                       <input type="text" className="w-[85%] h-full input" placeholder="Search..." />
+                                    <form action="#" className="flex items-center  h-12 space-x-1">
+                                       <input type="text" className="w-[85%] h-full input-1" placeholder="Search..." />
 
-                                       <button className="bg-black w-[15%] h-full text-white">
+                                       <button className="btn-1  w-[15%] h-full text-white">
                                           <SearchIcon className="w-5 h-5 mx-auto" />
                                        </button>
                                     </form>
@@ -82,7 +81,7 @@ export default function NavDrawer() {
                                  <ul className="py-4">
                                     {navLinks.map((link) => (
                                        <Fragment key={link.name}>
-                                          <li className="flex items-center justify-between border-l-4 border-transparent hover:border-black text-gray-500 rounded-l-sm px-2 lg:px-4 hover:text-black hover:bg-gray-200 hover:bg-opacity-60">
+                                          <li className="flex items-center justify-between border-l-4 border-transparent hover:border-black text-gray-500 rounded-r-md px-2 lg:px-4 hover:text-black hover:bg-gray-200 hover:bg-opacity-60">
                                              <Link href={link.url}>
                                                 <a
                                                    className="capitalize block w-full  py-2 tracking-wider text-base font-semibold  "
@@ -105,7 +104,7 @@ export default function NavDrawer() {
                                                 {link.children?.map((item) => (
                                                    <li
                                                       key={item.name}
-                                                      className="text-gray-500 text-sm pl-4 px-2 hover:text-black rounded-sm hover:bg-gray-200 hover:bg-opacity-60 border-l-2 hover:border-black"
+                                                      className="text-gray-500 text-sm pl-4 px-2 hover:text-black rounded-r-md hover:bg-gray-200 hover:bg-opacity-60 border-l-2 hover:border-black"
                                                    >
                                                       <Link href={item.url}>
                                                          <a

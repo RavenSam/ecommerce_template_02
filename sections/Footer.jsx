@@ -67,7 +67,7 @@ export default function Footer() {
                   <div>
                      <input type="text" className="input w-full" placeholder="Your email address" />
                   </div>
-                  <button className="btn-3 mt-1 w-full text-black">subscribe</button>
+                  <button className="btn-1 mt-1 w-full ">subscribe</button>
                </div>
             </div>
 
