@@ -4,9 +4,9 @@ import { StarIcon } from "@heroicons/react/solid"
 export default function Review({ review }) {
    return (
       <>
-         <div className="p-4 my-2 bg-gray-100 rounded-r-md flex items-start space-x-4 max-w-4xl border-l-4 border-black">
-            <div>
-               <div className="relative h-16 w-16 rounded-full  overflow-hidden">
+         <div className="p-4 my-2 bg-gray-50 rounded-md flex items-start space-x-4 max-w-3xl border">
+            <div className="border-2 p-[2px] rounded-full border-blue-500">
+               <div className="relative h-14 w-14 rounded-full  overflow-hidden">
                   <Image src={review.image} alt="Picture of the author" layout="fill" objectFit="cover" className="" />
                </div>
             </div>
@@ -19,7 +19,7 @@ export default function Review({ review }) {
                         <StarIcon
                            key={rating}
                            className={`h-5 w-5 flex-shrink-0 ${
-                              review.rating > rating ? "text-gray-900" : "text-gray-300"
+                              review.rating > rating ? "text-blue-500" : "text-gray-300"
                            }`}
                            aria-hidden="true"
                         />
@@ -27,7 +27,7 @@ export default function Review({ review }) {
                   </div>
                </div>
                <p className="text-gray-500 text-xs font-semibold">29 Aug 2021</p>
-               <p className="text-gray-500 py-4">{review.content}</p>
+               <p className="text-gray-700 py-2 text-sm ">{review.content}</p>
             </div>
          </div>
       </>

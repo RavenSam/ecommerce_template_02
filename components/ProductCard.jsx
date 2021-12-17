@@ -5,20 +5,15 @@ export default function ProductCard() {
    return (
       <div className=" relative  p-4 rounded-md">
          <div className="w-full  overflow-hidden h-80">
-            {/* <img
-               src="/products/shirt.png"
-               alt=""
-               className="w-full h-full object-center object-cover lg:w-full lg:h-full"
-            /> */}
             <div className="relative w-full h-full  object-center object-cover ">
-               <Image src="/products/shirt.png" layout="fill" objectFit="contain" />
+               <Image src="/products/shirt.png" alt="product" layout="fill" objectFit="contain" />
             </div>
          </div>
 
          <div className="mt-4 flex justify-between font-semibold">
             <div>
                <h4 className=" capitalize">
-                  <a href="">product name</a>
+                  <a href="#">product name</a>
                </h4>
             </div>
             <p className="text-sm font-medium text-gray-900">$35</p>
@@ -27,14 +22,14 @@ export default function ProductCard() {
          <button className="btn-3 w-full mt-4">Add to cart</button>
 
          <div className="flex items-center justify-evenly my-2 text-gray-600">
-            <button className="h-8 w-8 p-1 hover:bg-gray-200  hover:text-black rounded-sm">
-               <ExternalLinkIcon />
+            <button className="p-2 hover:bg-gray-200  hover:text-black rounded-md focus:ring-2 focus:ring-blue-500">
+               <ExternalLinkIcon className="h-6 w-6" />
             </button>
-            <button className="h-8 w-8 p-1 hover:bg-gray-200 hover:text-black rounded-sm">
-               <ArrowsExpandIcon />
+            <button className="p-2 hover:bg-gray-200 hover:text-black rounded-md focus:ring-2 focus:ring-blue-500">
+               <ArrowsExpandIcon className="h-6 w-6" />
             </button>
-            <button className="h-8 w-8 p-1 hover:bg-gray-200 hover:text-black rounded-sm">
-               <HeartIcon />
+            <button className="p-2 hover:bg-gray-200 hover:text-black rounded-md focus:ring-2 focus:ring-blue-500">
+               <HeartIcon className="h-6 w-6" />
             </button>
          </div>
       </div>

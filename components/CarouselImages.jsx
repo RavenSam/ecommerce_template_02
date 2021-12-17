@@ -31,17 +31,29 @@ export default function CarouselImages({ carouselDetails }) {
                      <div className={`absolute inset-0 w-full  h-full rounded-md  ${item.color}`}></div>
                   </Transition>
 
-                  <div className="absolute max-w-4xl left-1/4 h-full flex items-center p-4">
-                     <Transition
-                        show={i + 1 === showcase}
-                        enter="transform transition ease-in-out duration-[2s] "
-                        enterFrom="translate-x-16 opacity-0"
-                        enterTo="translate-y-0 opacity-1"
-                        leave="transform transition ease-in-out duration-700 "
-                        leaveFrom="translate-y-0 opacity-1"
-                        leaveTo="translate-y-5 opacity-0"
-                     >
-                        <h3 className="text-3xl capitalize text-white">{item.title}</h3>
+                  <div className="absolute max-w-2xl  left-1/4 h-full flex items-center">
+                     <Transition show={i + 1 === showcase}>
+                        <Transition.Child
+                           enter="transform transition ease-in-out duration-[2s] "
+                           enterFrom="translate-x-16 opacity-0"
+                           enterTo="translate-y-0 opacity-1"
+                           leave="transform transition ease-in-out duration-700 "
+                           leaveFrom="translate-y-0 opacity-1"
+                           leaveTo="translate-y-5 opacity-0"
+                        >
+                           <h3 className="text-3xl capitalize text-white py-5  font-semibold">{item.title}</h3>
+                        </Transition.Child>
+
+                        <Transition.Child
+                           enter="transform transition ease-in-out duration-[1.5s] delay-1000"
+                           enterFrom="-translate-y-8 opacity-0"
+                           enterTo="translate-y-0 opacity-1"
+                           leave="transform transition ease-in-out duration-700 "
+                           leaveFrom="translate-y-0 opacity-1"
+                           leaveTo="translate-y-5 opacity-0"
+                        >
+                           <p className="text-gray-300 ">{item.text}</p>
+                        </Transition.Child>
                      </Transition>
                   </div>
                </Fragment>

@@ -12,7 +12,7 @@ export default function Footer() {
                   <li className="font-semibold mb-2 capitalize">navigation</li>
                   {navigations.map((item) => (
                      <li key={item}>
-                        <a href="#" className="text-gray-500 text-xs sm:text-sm hover:text-white capitalize">
+                        <a href="#" className="text-gray-400 text-xs sm:text-sm hover:text-white capitalize">
                            {item}
                         </a>
                      </li>
@@ -23,7 +23,7 @@ export default function Footer() {
                   <li className="font-semibold mb-2 capitalize">account</li>
                   {account.map((item) => (
                      <li key={item}>
-                        <a href="#" className="text-gray-500 text-xs sm:text-sm hover:text-white capitalize">
+                        <a href="#" className="text-gray-400 text-xs sm:text-sm hover:text-white capitalize">
                            {item}
                         </a>
                      </li>
@@ -34,7 +34,7 @@ export default function Footer() {
                   <li className="font-semibold mb-2 capitalize">legal</li>
                   {legals.map((item) => (
                      <li key={item}>
-                        <a href="#" className="text-gray-500 text-xs sm:text-sm hover:text-white capitalize">
+                        <a href="#" className="text-gray-400 text-xs sm:text-sm hover:text-white capitalize">
                            {item}
                         </a>
                      </li>
@@ -45,7 +45,7 @@ export default function Footer() {
                   <li className="font-semibold mb-2 capitalize">solution</li>
                   {solutions.map((item) => (
                      <li key={item}>
-                        <a href="#" className="text-gray-500 text-xs sm:text-sm hover:text-white capitalize">
+                        <a href="#" className="text-gray-400 text-xs sm:text-sm hover:text-white capitalize">
                            {item}
                         </a>
                      </li>
@@ -56,9 +56,9 @@ export default function Footer() {
             <hr className="my-8 border-gray-700" />
 
             <div className="flex flex-col items-center md:flex-row md:items-start justify-between">
-               <div className="text-gray-500 text-center md:text-left ">
+               <div className=" text-center md:text-left ">
                   <h4 className="text-xl text-white uppercase font-semibold">subscribe to our newsletter</h4>
-                  <p className="text-gray-500 my-4">
+                  <p className="text-gray-400 my-4">
                      The latest news, articles, and resources, sent to your inbox weekly
                   </p>
                </div>
