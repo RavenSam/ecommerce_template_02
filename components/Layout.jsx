@@ -10,12 +10,12 @@ export default function Layout({ children }) {
 
    return (
       <>
-      <Head>
+         <Head>
             <link rel="icon" href="/favicon.ico" />
          </Head>
-         
-      <NextNprogress options={{ showSpinner: false }} color="#000" startPosition={0.3} />
-         <div className="font-poppins">
+
+         <NextNprogress options={{ showSpinner: false }} color="#000" startPosition={0.3} />
+         <div className="font-poppins selection:bg-black selection:text-white ">
             {!pageWithNoNav.includes(pathname) && <Header />}
 
             {children}

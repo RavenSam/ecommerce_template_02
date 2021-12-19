@@ -8,11 +8,11 @@ export default function Home() {
             <title>Home</title>
          </Head>
 
-         <section className="w-full max-w-7xl lg:mx-auto mt-4 p-2">
+         <section className="w-full max-w-7xl lg:mx-auto mt-10 p-2">
             <Hero />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+         <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
             <TrendingProduct />
          </section>
 
@@ -20,7 +20,7 @@ export default function Home() {
             <ShopByCategory />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-16 py-10 md:py-32">
+         <section className="px-4 lg:container lg:mx-auto mt-16 py-10 md:py-24">
             <Services />
          </section>
 
