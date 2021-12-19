@@ -1,8 +1,9 @@
 import { Fragment, useState, useRef } from "react"
 import Link from "next/link"
-import { ChevronDownIcon, MenuAlt3Icon, SearchIcon, XIcon } from "@heroicons/react/outline"
+import { ChevronDownIcon, MenuAlt3Icon, XIcon } from "@heroicons/react/outline"
 import { Transition, Dialog } from "@headlessui/react"
 import { navLinks } from "../utils/headerItems"
+import SearchInput from "./SearchInput"
 
 export default function NavDrawer() {
    const [open, setOpen] = useState(false)
@@ -69,13 +70,7 @@ export default function NavDrawer() {
 
                                  <hr className="mt-8 mb-4 border-2 rounded-full w-1/2 border-black" />
                                  <div className=" py-4 ">
-                                    <form action="#" className="flex items-center  h-12 space-x-1">
-                                       <input type="text" className="w-[85%] h-full input-1" placeholder="Search..." />
-
-                                       <button className="btn-1  w-[15%] h-full text-white">
-                                          <SearchIcon className="w-5 h-5 mx-auto" />
-                                       </button>
-                                    </form>
+                                    <SearchInput />
                                  </div>
 
                                  <ul className="py-4">

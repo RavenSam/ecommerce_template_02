@@ -3,7 +3,7 @@ import { ArrowsExpandIcon, ExternalLinkIcon, HeartIcon } from "@heroicons/react/
 
 export default function ProductCard() {
    return (
-      <div className=" relative  p-4 rounded-md">
+      <div className=" relative p-4 rounded-md">
          <div className="w-full  overflow-hidden h-80">
             <div className="relative w-full h-full  object-center object-cover ">
                <Image src="/products/shirt.png" alt="product" layout="fill" objectFit="contain" />

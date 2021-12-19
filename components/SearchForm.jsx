@@ -1,6 +1,7 @@
 import { Fragment, useState, useRef } from "react"
 import { SearchIcon } from "@heroicons/react/outline"
 import { Transition, Dialog } from "@headlessui/react"
+import SearchInput from "./SearchInput"
 
 export default function SearchForm() {
    const [open, setOpen] = useState(false)
@@ -48,24 +49,7 @@ export default function SearchForm() {
                         leaveTo="translate-y-5 opacity-0"
                      >
                         <div className=" bg-white shadow-lg w-screen max-w-md p-4 rounded-md  transform -translate-x-1/2">
-                           <form action="#" className="relative ">
-                              <input
-                                 type="text"
-                                 name="search"
-                                 id="search"
-                                 placeholder="search"
-                                 className="input-1 pr-16 "
-                                 required
-                              />
-
-                              <button
-                                 type="submit"
-                                 title="Search Product"
-                                 className="absolute right-0 top-0 h-full px-4 cursor-pointer text-white bg-black rounded-r-md transform active:scale-95 focus:ring-2 focus:ring-blue-500"
-                              >
-                                 <SearchIcon className="w-5 h-5" />
-                              </button>
-                           </form>
+                           <SearchInput />
                         </div>
                      </Transition.Child>
                   </div>

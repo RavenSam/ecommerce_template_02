@@ -26,7 +26,7 @@ export default function Pagination({ currentPage, totalPages, setCurrentPage }) 
                <Fragment key={i}>
                   <button
                      className={`w-10 h-10 sm:flex justify-center items-center transition duration-150 ease-in  rounded-full ${
-                        i + 1 === currentPage ? "bg-teal-600 text-white" : "hidden"
+                        i + 1 === currentPage ? "bg-black text-white" : "hidden hover:bg-gray-300"
                      }`}
                      onClick={() => setCurrentPage(i + 1)}
                   >

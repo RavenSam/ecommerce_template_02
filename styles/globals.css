@@ -26,7 +26,11 @@
    }
 
    .btn-3 {
-      @apply btn capitalize bg-gray-300  transition-all duration-200 ease-in-out hover:bg-black hover:text-white active:scale-90;
+      @apply btn capitalize bg-gray-200  transition-all duration-200 ease-in-out hover:bg-black hover:text-white active:scale-90;
+   }
+
+   .btn-t {
+      @apply inline-block capitalize tracking-wider font-semibold bg-white text-white shadow-sm bg-opacity-20 py-2 px-4 rounded-md  hover:bg-opacity-40;
    }
 
    .btn-rounded {
