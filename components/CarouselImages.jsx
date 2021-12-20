@@ -29,7 +29,7 @@ export default function CarouselImages({ carouselDetails }) {
                      leaveTo=" opacity-0"
                      as={Fragment}
                   >
-                     <div className={`absolute inset-0 w-full  h-full rounded-md overflow-hidden  ${item.color}`}>
+                     <div className="absolute inset-0 w-full  h-full rounded-md overflow-hidden">
                         <div className="relative w-full h-full ">
                            <Image src={item.image} alt="product" layout="fill" objectFit="cover" />
                         </div>

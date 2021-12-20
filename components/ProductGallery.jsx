@@ -5,7 +5,7 @@ import Slider from "react-slick"
 export default function ProductGallery({ colors, productColor, setProductColor }) {
    const [selectedImage, setSelectedImage] = useState(1)
 
-   var settings = {
+   const settings = {
       infinite: false,
       speed: 500,
       slidesToShow: 3,

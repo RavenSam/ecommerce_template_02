@@ -1,9 +1,9 @@
 import Image from "next/image"
 
-export default function ShopByCategory() {
+export default function ShopByCollections() {
    return (
       <div>
-         <h2 className="h2">Shop By Category</h2>
+         <h2 className="h2">Shop By Collections</h2>
 
          <div className="grid grid-cols-1 md:grid-cols-2  gap-4 ">
             <div className="relative min-h-[15rem] row-span-2 rounded-md overflow-hidden">

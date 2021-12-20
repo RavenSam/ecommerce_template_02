@@ -10,7 +10,7 @@
    }
 
    .h2 {
-      @apply text-2xl md:text-3xl font-bold py-4 mb-4 capitalize font-roboto;
+      @apply text-2xl md:text-[28px] font-bold py-4 mb-4 capitalize font-roboto;
    }
 
    .h3 {

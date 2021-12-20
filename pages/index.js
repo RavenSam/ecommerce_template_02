@@ -1,5 +1,5 @@
 import Head from "next/head"
-import { Discount, Services, Hero, ShopByCategory, TrendingProduct } from "../sections"
+import { Discount, Services, Hero, ShopByCategories, TrendingProduct, ShopByCollections } from "../sections"
 
 export default function Home() {
    return (
@@ -16,12 +16,16 @@ export default function Home() {
             <TrendingProduct />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
-            <ShopByCategory />
+         <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
+            <ShopByCategories />
          </section>
 
          <section className="px-4 lg:container lg:mx-auto mt-16 py-10 md:py-24">
             <Services />
+         </section>
+
+         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+            <ShopByCollections />
          </section>
 
          <section className="px-4 lg:container lg:mx-auto mt-10 py-10 md:py-24">
