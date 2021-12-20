@@ -41,13 +41,13 @@ export default function ShopByCategories() {
       <div>
          <h2 className="h2">Shop By Collections</h2>
 
-         <div className="overflow-x-hidden">
+         <div className="overflow-x-hidden px-4">
             <Slider {...settings}>
                {[1, 2, 3, 4, 5, 6].map((img, i) => (
                   <div key={i} className="">
-                     <div className="relative w-auto max-w-xl rounded-md overflow-hidden h-64 bg-gray-800 m-4">
+                     <div className="relative w-auto max-w-xl rounded-md overflow-hidden h-64 bg-gray-800 mx-4">
                         <Image src="/shop.jpg" layout="fill" objectFit="cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-[#000000b8] " />
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#000000b8]" />
 
                         <div className="text-white text-center w-full absolute bottom-0 left-0 p-4">
                            <h3 className="text-xl font-semibold tracking-wider mb-4">Collection {i + 1}</h3>
@@ -58,37 +58,6 @@ export default function ShopByCategories() {
             </Slider>
          </div>
 
-         <style>{`
-            .slick-next{
-                 right:4px;
-            }
-
-            .slick-prev{
-                left:20px;
-                z-index:1;
-               padding:0 1px;
-            }
-
-            .slick-next,
-            .slick-prev{
-                background:rgba(255,255,255,.7);
-                border-radius:6px;
-                padding: 0 10px;
-                width:30px;
-                height:40px;
-         }
-
-           .slick-next:hover,
-           .slick-prev:hover{
-                background:rgba(255,255,255,8);
-         }
-
-         .slick-disabled{
-             background:rgba(255,255,255,.3) ;
-           }
-       
-         
-         `}</style>
-      </div>
+            </div>
    )
 }
