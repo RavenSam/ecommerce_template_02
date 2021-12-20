@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { ChevronDownIcon } from "@heroicons/react/outline"
 import { useState } from "react"
-import { navLinks } from "../../utils/headerItems"
+import { navLinks } from "../utils/headerItems"
 
 export default function HeaderNav() {
    const [menuOpen, setMenuOpen] = useState(false)

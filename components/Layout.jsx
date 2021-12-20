@@ -15,7 +15,7 @@ export default function Layout({ children }) {
          </Head>
 
          <NextNprogress options={{ showSpinner: false }} color="#000" startPosition={0.3} />
-         <div className="font-poppins selection:bg-black selection:text-white ">
+         <div className="!font-poppins  ">
             {!pageWithNoNav.includes(pathname) && <Header />}
 
             {children}

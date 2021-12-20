@@ -1,5 +1,4 @@
-import HeaderIcons from "../components/fragments/HeaderIcons"
-import HeaderNav from "../components/fragments/HeaderNav"
+import { AvatarIcon, SearchForm, NavDrawer, MiniCart, HeaderNav } from "../components"
 
 export default function Header() {
    return (
@@ -14,8 +13,14 @@ export default function Header() {
             <HeaderNav />
          </nav>
 
-         <div className="">
-            <HeaderIcons />
+         <div className="flex items-center space-x-4">
+            <SearchForm />
+
+            <MiniCart />
+
+            <AvatarIcon />
+
+            <NavDrawer />
          </div>
       </header>
    )
