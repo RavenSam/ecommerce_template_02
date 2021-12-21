@@ -13,11 +13,11 @@ export default function Home() {
          </section>
 
          <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
-            <TrendingProduct />
+            <ShopByCategories />
          </section>
 
          <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
-            <ShopByCategories />
+            <TrendingProduct />
          </section>
 
          <section className="px-4 lg:container lg:mx-auto mt-16 py-10 md:py-24">

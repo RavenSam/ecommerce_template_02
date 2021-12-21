@@ -31,8 +31,13 @@ export default function Services() {
    return (
       <div className="grid grid-cols-2 md:grid-cols-4 gap-y-8 gap-4">
          {servicesItems.map((item, i) => (
-            <div key={i} className="space-y-4 flex flex-col items-center justify-center text-center">
-               <div className={`rounded-full border  h-12 w-12 p-2 ${item.classes} `}>
+            <div
+               key={i}
+               className="group space-y-4 flex flex-col items-center justify-center text-center cursor-pointer rounded-md p-3"
+            >
+               <div
+                  className={`rounded-full border  h-12 w-12 p-2 transform transition duration-300 group-hover:-translate-y-4  ${item.classes} `}
+               >
                   <item.icon className="" />
                </div>
 
