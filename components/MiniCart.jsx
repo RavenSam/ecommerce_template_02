@@ -12,10 +12,10 @@ export default function MiniCart() {
    return (
       <>
          <button
-            className="relative rounded-full inline-block w-10 h-10 p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
+            className="relative rounded-full inline-block p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
             onClick={() => setOpen(!open)}
          >
-            <ShoppingCartIcon />
+            <ShoppingCartIcon className="w-6 h-6" />
 
             {cartLength > 0 && (
                <span className=" absolute -top-0 -right-0 h-5 w-5 text-[10px] leading-[20px] font-semibold text-white text-center  bg-pink-500 rounded-full">
@@ -97,7 +97,7 @@ export default function MiniCart() {
                                  </p>
                                  <div className="mt-6">
                                     <Link href="/checkout">
-                                       <a className="btn-1 block text-center py-3" onClose={() => setOpen(false)}>
+                                       <a onClick={() => setOpen(false)} className="btn-1 block text-center py-3">
                                           Checkout
                                        </a>
                                     </Link>

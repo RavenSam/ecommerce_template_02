@@ -10,10 +10,10 @@ export default function SearchForm() {
    return (
       <>
          <button
-            className="rounded-full hidden md:inline-block w-10 h-10 p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
+            className="rounded-full hidden md:inline-block p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
             onClick={() => setOpen(!open)}
          >
-            <SearchIcon />
+            <SearchIcon className="w-6 h-6" />
          </button>
 
          <Transition.Root show={open} as={Fragment}>
@@ -21,9 +21,7 @@ export default function SearchForm() {
                initialFocus={cancelButtonRef}
                as="div"
                className="fixed z-50 inset-0 overflow-hidden"
-               onClose={() => {
-                  setOpen(!open)
-               }}
+               onClose={() => setOpen(!open)}
             >
                <div className="absolute inset-0 overflow-hidden">
                   <Transition.Child

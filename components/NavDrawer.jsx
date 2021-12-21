@@ -63,8 +63,8 @@ export default function NavDrawer() {
                                     <h2 className="text-3xl font-black tracking-widest text-white bg-black p-4 rounded-b-md">
                                        LOGO
                                     </h2>
-                                    <button className="w-10 h-10 p-2 " onClick={() => setOpen(false)}>
-                                       <XIcon />
+                                    <button className="p-2 " onClick={() => setOpen(false)}>
+                                       <XIcon className="w-6 h-6" />
                                     </button>
                                  </div>
 
