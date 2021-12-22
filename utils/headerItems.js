@@ -2,12 +2,12 @@ export const navLinks = [
    { name: "home", url: "/" },
    {
       name: "categories",
-      url: "#",
+      url: "/category",
       children: [
-         { name: "all categories", url: "#" },
-         { name: "men", url: "#" },
-         { name: "women", url: "#" },
-         { name: "kids", url: "#" },
+         { name: "new arrivals", url: "/category/new-arrivals" },
+         { name: "men", url: "/category/men" },
+         { name: "women", url: "/category/women" },
+         { name: "kids", url: "/category/kids" },
       ],
    },
    { name: "about", url: "#", children: [] },

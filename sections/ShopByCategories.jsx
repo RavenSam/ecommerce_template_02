@@ -1,6 +1,5 @@
 import Slider from "react-slick"
 import Image from "next/image"
-import { ChevronRightIcon } from "@heroicons/react/outline"
 
 export default function ShopByCategories() {
    const settings = {
@@ -39,7 +38,7 @@ export default function ShopByCategories() {
 
    return (
       <div>
-         <h2 className="h2">Shop By Collections</h2>
+         <h2 className="h2">Shop By Category</h2>
 
          <div className="overflow-x-hidden px-4">
             <Slider {...settings}>
@@ -50,14 +49,13 @@ export default function ShopByCategories() {
                         <div className="absolute inset-0 bg-gradient-to-t from-[#000000b8]" />
 
                         <div className="text-white text-center w-full absolute bottom-0 left-0 p-4">
-                           <h3 className="text-xl font-semibold tracking-wider mb-4">Collection {i + 1}</h3>
+                           <h3 className="text-xl font-semibold tracking-wider mb-4">Category {i + 1}</h3>
                         </div>
                      </div>
                   </div>
                ))}
             </Slider>
          </div>
-
-            </div>
+      </div>
    )
 }
