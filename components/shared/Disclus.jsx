@@ -13,7 +13,7 @@ export default function Disclus({ title = "title", content = [], option }) {
 
             <Disclosure.Panel className="text-gray-500 pl-2">
                {content.map((item, i) => (
-                  <Link href="#">
+                  <Link href="#" key={i}>
                      <a className="block capitalize hover:bg-gray-300 hover:text-black px-2 py-1 rounded-md">{item}</a>
                   </Link>
                ))}

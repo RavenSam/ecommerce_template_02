@@ -42,7 +42,7 @@ export default function ShopByCategories() {
 
          <div className="overflow-x-hidden px-4">
             <Slider {...settings}>
-               {[1, 2, 3, 4, 5, 6].map((img, i) => (
+               {[...Array(6)].map((img, i) => (
                   <div key={i} className="">
                      <div className="relative w-auto max-w-xl rounded-md overflow-hidden h-64 bg-gray-800 mx-4">
                         <Image src="/shop.jpg" layout="fill" objectFit="cover" />
