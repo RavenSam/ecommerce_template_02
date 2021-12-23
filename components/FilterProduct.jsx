@@ -13,8 +13,8 @@ const display = [
 
 export default function FilterProduct() {
    return (
-      <div className="flex items-center justify-between mb-8">
-         <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-between mb-8 space-x-2">
+         <div className="hidden md:flex items-center space-x-2 ">
             <MenuDrop title="size" items={sizeFilter} />
 
             <MenuDrop title="color" items={colorFilter} />
@@ -22,9 +22,9 @@ export default function FilterProduct() {
             <MenuDrop title="price" items={priceFilter} />
          </div>
 
-         <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-2">
-               <p className="text-sm font-semibold">Display</p>
+         <div className="flex items-center space-x-2">
+            <div className="hidden lg:flex items-center space-x-2">
+               <p className=" text-sm font-semibold">Display</p>
                {display.map((item) => (
                   <button
                      key={item.id}

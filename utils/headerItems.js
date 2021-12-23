@@ -4,7 +4,6 @@ export const navLinks = [
       name: "categories",
       url: "/category",
       children: [
-         { name: "new arrivals", url: "/category/new-arrivals" },
          { name: "men", url: "/category/men" },
          { name: "women", url: "/category/women" },
          { name: "kids", url: "/category/kids" },
