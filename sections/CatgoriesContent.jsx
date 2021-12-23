@@ -17,7 +17,9 @@ export default function CatgoriesContent() {
                </div>
             </div>
 
-            <div className="col-span-12 sm:col-span-9 grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 my-4">
+            <div className="col-span-12 sm:col-span-9 ">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 my-4">
+
                {Object.entries(categoryItems).map((cat, i) => (
                   <Link href={`/category/${cat[0]}`} key={i}>
                      <a className="h-48 sm:h-64 group">
@@ -40,6 +42,7 @@ export default function CatgoriesContent() {
                      </a>
                   </Link>
                ))}
+               </div>
             </div>
          </div>
       </>
