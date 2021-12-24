@@ -38,7 +38,7 @@ export default function AvatarIcon() {
                      leaveFrom="opacity-400"
                      leaveTo="opacity-0"
                   >
-                     <Dialog.Overlay className="absolute inset-0 bg-gray-400 bg-opacity-80 transition-opacity backdrop-blur-sm" />
+                     <Dialog.Overlay className="absolute inset-0 bg-gray-400 bg-opacity-80 transition-opacity " />
                   </Transition.Child>
 
                   <div className="fixed inset-1/2 max-w-full font-poppins">
@@ -69,7 +69,7 @@ export default function AvatarIcon() {
                               </div>
 
                               <div className="py-4">
-                                 <div className="space-y-5">
+                                 <div className="space-y-3">
                                     <Link href="/login">
                                        <a className="flex items-center px-4 py-3 elevation-1 rounded-md text-gray-300 bg-black bg-opacity-90 hover:bg-opacity-100 focus:ring-2 focus:ring-blue-500 ">
                                           <MailIcon className="h-6 w-6 mr-2" />

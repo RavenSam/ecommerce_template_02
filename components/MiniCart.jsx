@@ -41,7 +41,7 @@ export default function MiniCart() {
                      leaveFrom="opacity-400"
                      leaveTo="opacity-0"
                   >
-                     <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity backdrop-blur-sm" />
+                     <Dialog.Overlay className="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity " />
                   </Transition.Child>
 
                   <div className="fixed inset-y-0 right-0  max-w-full flex font-poppins">

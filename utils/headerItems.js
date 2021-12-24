@@ -9,6 +9,6 @@ export const navLinks = [
          { name: "kids", url: "/category/kids" },
       ],
    },
-   { name: "about", url: "#", children: [] },
-   { name: "contact", url: "#" },
+   { name: "about", url: "about", children: [] },
+   { name: "contact", url: "/contact" },
 ]

@@ -31,6 +31,8 @@ export default function CarouselImages({ carouselDetails }) {
                   >
                      <div className="absolute inset-0 w-full  h-full rounded-md overflow-hidden">
                         <div className="relative w-full h-full ">
+                           {/* lg width:{1264}  height:{486}*/}
+
                            <Image src={item.image} alt="product" layout="fill" objectFit="cover" />
                         </div>
 
