@@ -11,7 +11,7 @@ export default function Layout({ children }) {
    return (
       <>
          <Head>
-            <link rel="icon" href="/favicon.ico" />
+            <link rel="icon" type="image/png" href="logo-2.png" />
          </Head>
 
          <NextNprogress options={{ showSpinner: false }} color="#000" startPosition={0.3} />

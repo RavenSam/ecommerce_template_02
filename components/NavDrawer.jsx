@@ -60,9 +60,20 @@ export default function NavDrawer() {
                                  {/* ************************************************************ */}
                                  {/* ************************************************************ */}
                                  <div className="flex items-center justify-between  -mt-6">
-                                    <h2 className="text-3xl font-black tracking-widest text-white bg-black p-4 rounded-b-md">
+                                    {/* <h2 className="text-3xl font-black tracking-widest text-white bg-black p-4 rounded-b-md">
                                        LOGO
-                                    </h2>
+                                    </h2> */}
+
+                                    <div className="-mt-1 rounded-b-xl overflow-hidden">
+                                       <img
+                                          src="/logo.png"
+                                          alt="seano"
+                                          className="h-14 md:h-16 max-w-[180px]"
+                                          width={175}
+                                          height={64}
+                                       />
+                                    </div>
+
                                     <button className="p-2 " onClick={() => setOpen(false)}>
                                        <XIcon className="w-6 h-6" />
                                     </button>
