@@ -1,13 +1,22 @@
-import { Fragment, useState, useRef } from "react"
+import { Fragment, useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { ShoppingCartIcon, XIcon } from "@heroicons/react/outline"
 import { Transition, Dialog } from "@headlessui/react"
 import ProductInCart from "./ProductInCart"
+import { useRecoilValue } from "recoil"
+import { cartState } from "../atoms/cartAtom"
 
 export default function MiniCart() {
    const [open, setOpen] = useState(false)
-   const [cartLength, setCartLength] = useState(1)
+   const [cartLength, setCartLength] = useState(false)
    const cancelButtonRef = useRef()
+   const cart = useRecoilValue(cartState)
+
+   useEffect(() => {
+      let count = 0
+      cart.forEach((item) => (count += item.qty))
+      setCartLength(count)
+   }, [cart])
 
    return (
       <>

@@ -65,7 +65,7 @@ export default function Reviews() {
             </div>
 
             <div className="min-w-fit p-4 mx-auto">
-               <button className="btn-1">Add a review</button>
+               <button className="btn-1 !tracking-wider hover:opacity-80">Add a review</button>
             </div>
          </div>
       </div>

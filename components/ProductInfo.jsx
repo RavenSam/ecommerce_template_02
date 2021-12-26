@@ -1,6 +1,11 @@
 import { useState } from "react"
 import { HeartIcon as HeartFull, StarIcon } from "@heroicons/react/solid"
 import { HeartIcon } from "@heroicons/react/outline"
+import { useRouter } from "next/router"
+import { useRecoilState, useRecoilValue } from "recoil"
+import { cartState } from "../atoms/cartAtom"
+import { viewProductState } from "../atoms/productAtom"
+import toast from "react-hot-toast"
 
 const sizes = ["xs", "s", "m", "l", "xl"]
 
@@ -8,11 +13,45 @@ export default function ProductInfo({ productColor }) {
    const [selectedSize, setSelectedSize] = useState("m")
    const [qty, setQty] = useState(1)
    const [isOnWhishlist, setIsOnWhishlist] = useState(false)
+   const [cart, setCart] = useRecoilState(cartState)
+   const { query } = useRouter()
+   const viewProduct = useRecoilValue(viewProductState)
+
+   const addToCart = () => {
+      // return product if the product in cart and the product to add
+      //  have the same id & color & size else return undefined
+      const findProduct = cart.find(
+         (item) => item.id === query.id && item.varient.color === productColor && item.varient.size === selectedSize
+      )
+
+      // if product exist add qty
+      if (findProduct) {
+         const newCart = cart.map((item) =>
+            item.cartId === findProduct.cartId ? { ...findProduct, qty: findProduct.qty + +qty } : item
+         )
+
+         setCart(newCart)
+         toast.success("Item added to your cart")
+      } else {
+         const newCart = [
+            ...cart,
+            {
+               ...viewProduct,
+               cartId: cart.length + Math.random(),
+               qty,
+               varient: { color: productColor, size: selectedSize },
+            },
+         ]
+
+         setCart(newCart)
+         toast.success("Item added to your cart")
+      }
+   }
 
    return (
       <>
          <div className="mt-4 md:mt-0">
-            <h1 className=" h1">your product name</h1>
+            <h1 className=" h1">{viewProduct.name}</h1>
 
             <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor }} />
 
@@ -33,13 +72,10 @@ export default function ProductInfo({ productColor }) {
             </div>
 
             <div className="flex items-center space-x-2 mt-2">
-               <h2 className="text-lg md:text-2xl lg:text-3xl font-bold">$19.99</h2>
+               <h2 className="text-lg md:text-2xl lg:text-3xl font-bold">${viewProduct.price}</h2>
             </div>
 
-            <p className="text-gray-500 mt-2">
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum nostrum nisi voluptate dolore, voluptas
-               perferendis, adipisci nesciunt eaque blanditiis.
-            </p>
+            <p className="text-gray-500 mt-2">{viewProduct.description}</p>
          </div>
 
          <div className="mt-8">
@@ -85,7 +121,9 @@ export default function ProductInfo({ productColor }) {
          <div className="flex items-center mt-8 space-x-4 ">
             <button className="btn-1">buy now</button>
 
-            <button className="btn-2">add to cart</button>
+            <button className="btn-2" onClick={addToCart}>
+               add to cart
+            </button>
 
             <button
                title={isOnWhishlist ? "Remove From The Whishlist" : "Add To The Wishlist"}
