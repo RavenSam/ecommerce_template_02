@@ -72,12 +72,14 @@ export default function CarouselImages({ carouselDetails }) {
          <button
             className="bg-white text-white shadow-sm bg-opacity-20 py-4 px-2 rounded-md transform -translate-y-1/2 absolute top-1/2 left-1 md:left-5 opacity-70 hover:opacity-100"
             onClick={prevSlide}
+            aria-label="Previous"
          >
             <ChevronLeftIcon className="w-4 h-4 md:h-6 md:w-6" />
          </button>
          <button
             className="bg-white text-white shadow-sm bg-opacity-20 py-4 px-2 rounded-md transform -translate-y-1/2 absolute top-1/2 right-1 md:right-5 opacity-70 hover:opacity-100"
             onClick={nextSlide}
+            aria-label="Next"
          >
             <ChevronRightIcon className="w-4 h-4 md:h-6 md:w-6" />
          </button>

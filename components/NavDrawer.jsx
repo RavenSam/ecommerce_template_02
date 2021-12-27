@@ -17,6 +17,7 @@ export default function NavDrawer() {
          <button
             className="rounded-full inline-block md:hidden w-10 h-10 p-2 transition duration-200 hover:bg-gray-200 active:bg-gray-300"
             onClick={() => setOpen(!open)}
+            aria-label="Menu"
          >
             <MenuAlt3Icon />
          </button>
@@ -74,7 +75,7 @@ export default function NavDrawer() {
                                        />
                                     </div>
 
-                                    <button className="p-2 " onClick={() => setOpen(false)}>
+                                    <button className="p-2 " aria-label="Close Menu" onClick={() => setOpen(false)}>
                                        <XIcon className="w-6 h-6" />
                                     </button>
                                  </div>

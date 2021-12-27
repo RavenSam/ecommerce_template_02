@@ -55,7 +55,7 @@ export default function ShopByCategories() {
                {categories.map((cat, i) => (
                   <div key={i} className="">
                      <div className="relative w-auto max-w-xl rounded-md overflow-hidden h-64 bg-gray-800 mx-4">
-                        <Image src={cat.image} layout="fill" objectFit="cover" />
+                        <Image src={cat.image} alt={cat.name} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#000000b8]" />
 
                         <div className="text-white text-center w-full absolute bottom-0 left-0 p-4">

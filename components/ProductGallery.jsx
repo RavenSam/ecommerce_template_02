@@ -21,6 +21,7 @@ export default function ProductGallery({ colors, productColor, setProductColor }
                   className={`w-6 h-6 rounded-full transition-all duration-300 ${color === productColor && "p-[3px]"}`}
                   style={{ border: `2px solid ${color}`, backgroundColor: color !== productColor && color }}
                   onClick={() => setProductColor(color)}
+                  aria-label="color"
                >
                   <span className="block w-full h-full rounded-full " style={{ backgroundColor: color }} />
                </button>
@@ -29,7 +30,7 @@ export default function ProductGallery({ colors, productColor, setProductColor }
 
          <div className="flex-grow  rounded-md overflow-x-hidden">
             <div className="relative w-full h-[400px] mx-auto bg-[#f3f3f3]">
-               <Image src="/products/shirt.png" layout="fill" objectFit="contain" quality={100} />
+               <Image src="/products/shirt.png" alt="product image" layout="fill" objectFit="contain" quality={100} />
             </div>
 
             <div className=" mt-4 px-8">
@@ -41,7 +42,7 @@ export default function ProductGallery({ colors, productColor, setProductColor }
                         className={`${selectedImage === i && "border border-black rounded-md"}`}
                      >
                         <div className="relative w-full h-24">
-                           <Image src="/products/shirt.png" layout="fill" objectFit="contain" />
+                           <Image src="/products/shirt.png" alt="product image" layout="fill" objectFit="contain" />
                         </div>
                      </div>
                   ))}

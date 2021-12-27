@@ -17,6 +17,7 @@ export default function Breadcrumbs() {
       <div className="flex items-center border rounded-md bg-gray-100 text-gray-600  px-4">
          <Link href="/">
             <a className="px-2 py-2 hover:text-blue-500">
+               <span className="sr-only">Home</span>
                <HomeIcon className="h-5 w-5" />
             </a>
          </Link>
@@ -28,7 +29,7 @@ export default function Breadcrumbs() {
                <Link href={path.href}>
                   <a
                      className={`px-2 py-2  capitalize font-semibold text-sm ${
-                        i === pathArray.length - 1 ? "text-blue-500" : "hover:text-blue-400"
+                        i === pathArray.length - 1 ? "text-black" : "hover:text-gray-800"
                      }`}
                   >
                      {path.breadcrumb}

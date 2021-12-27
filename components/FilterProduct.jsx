@@ -14,7 +14,10 @@ const display = [
 export default function FilterProduct() {
    return (
       <div className="flex items-center justify-between mb-8 space-x-2">
-         <button className="md:hidden p-2 hover:bg-gray-300  bg-gray-200 text-black rounded-md focus:ring-2 focus:ring-blue-500">
+         <button
+            className="md:hidden p-2 hover:bg-gray-300  bg-gray-200 text-black rounded-md focus:ring-2 focus:ring-blue-500"
+            aria-label="filter"
+         >
             <FilterIcon className="h-5 w-5" />
          </button>
 

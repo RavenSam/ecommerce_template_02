@@ -5,7 +5,8 @@ export default function ResetPassword() {
    return (
       <>
          <Head>
-            <title>Reset your password</title>
+            <title>Seano - Reset your password</title>
+            <meta name="description" content="Reset Your Password" />
          </Head>
 
          <div className="flex items-center justify-center min-h-screen sm:bg-gray-100">

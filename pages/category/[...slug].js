@@ -29,7 +29,8 @@ export default function Category({}) {
    return (
       <>
          <Head>
-            <title>Category - {query?.slug.map((x) => x)}</title>
+            <title>Seano - Category : {query?.slug.map((x) => x)}</title>
+            <meta name="description" content={category.description | "description"} />
          </Head>
 
          <section className="px-4 lg:container lg:mx-auto  py-5">

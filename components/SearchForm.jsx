@@ -12,6 +12,7 @@ export default function SearchForm() {
          <button
             className="rounded-full hidden md:inline-block p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
             onClick={() => setOpen(!open)}
+            aria-label="Search"
          >
             <SearchIcon className="w-6 h-6" />
          </button>

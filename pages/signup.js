@@ -5,7 +5,8 @@ export default function Signup() {
    return (
       <>
          <Head>
-            <title>Sign up and create an account</title>
+            <title>Seano - Sign up and create an account</title>
+            <meta name="description" content="Create Seano account" />
          </Head>
 
          <div className="flex items-center justify-center min-h-screen sm:bg-gray-100">

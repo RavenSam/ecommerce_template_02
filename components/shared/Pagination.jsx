@@ -21,6 +21,7 @@ export default function Pagination({ currentPage = 1, totalPages = 2 }) {
             className="h-12 w-12 mr-1 flex justify-center items-center rounded-full bg-gray-200 disabled:opacity-60"
             onClick={prevPage}
             disabled={currentPage === 1}
+            aria-label="Previous page"
          >
             <ChevronLeftIcon className="h-5 w-5" />
          </button>
@@ -32,6 +33,7 @@ export default function Pagination({ currentPage = 1, totalPages = 2 }) {
                      className={`w-10 h-10 sm:flex justify-center items-center transition duration-150 ease-in  rounded-full ${
                         i + 1 === currentPage ? "bg-black text-white" : "hidden hover:bg-gray-300"
                      }`}
+                     aria-label="Page Number"
                   >
                      {i + 1}
                   </button>
@@ -43,6 +45,7 @@ export default function Pagination({ currentPage = 1, totalPages = 2 }) {
             className="h-12 w-12 ml-1 flex justify-center items-center rounded-full bg-gray-200 disabled:opacity-60"
             onClick={nextPage}
             disabled={currentPage === totalPages}
+            aria-label="Next Page"
          >
             <ChevronRightIcon className="h-5 w-5" />
          </button>

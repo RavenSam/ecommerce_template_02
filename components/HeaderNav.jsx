@@ -30,10 +30,6 @@ export default function HeaderNav() {
                   {link.children?.length > 0 && (
                      <div
                         className={`origin-top-right absolute left-0 mt-2 p-2 w-56 rounded-md shadow-lg bg-white  focus:outline-none ${toggleClass}`}
-                        role="menu"
-                        aria-orientation="vertical"
-                        aria-labelledby="menu-button"
-                        tabIndex="-1"
                      >
                         {link.children.map((item) => (
                            <div key={item.name} className="">

@@ -5,7 +5,8 @@ export default function Login() {
    return (
       <>
          <Head>
-            <title>Log in to your account</title>
+            <title>Seano - Log in to your account</title>
+            <meta name="description" content="Log in to your accaount Seano" />
          </Head>
 
          <div className="flex items-center justify-center min-h-screen sm:bg-gray-100">

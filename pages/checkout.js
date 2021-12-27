@@ -5,7 +5,8 @@ export default function Checkout() {
    return (
       <>
          <Head>
-            <title>Checkout</title>
+            <title>Seano - Checkout</title>
+            <meta name="description" content="Checkout for your product" />
          </Head>
 
          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-7xl lg:mx-auto mt-10 p-2">

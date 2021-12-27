@@ -15,7 +15,8 @@ export default function Home() {
    return (
       <>
          <Head>
-            <title>Home</title>
+            <title>Seano - Home</title>
+            <meta name="description" content="Seano fro clothes and accesories all ranges and colors" />
          </Head>
 
          <section className="w-full max-w-7xl lg:mx-auto mt-10 p-2">

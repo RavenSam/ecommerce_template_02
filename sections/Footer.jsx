@@ -69,7 +69,7 @@ export default function Footer() {
 
             <div className="flex flex-col items-center md:flex-row md:items-start justify-between">
                <div className=" text-center md:text-left ">
-                  <h4 className="text-xl text-white uppercase font-semibold">subscribe to our newsletter</h4>
+                  <h2 className="text-xl text-white uppercase font-semibold">subscribe to our newsletter</h2>
                   <p className="text-gray-300 my-4">
                      The latest news, articles, and resources, sent to your inbox weekly
                   </p>

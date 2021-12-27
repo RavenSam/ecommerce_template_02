@@ -7,7 +7,8 @@ export default function Categories({ categories }) {
    return (
       <>
          <Head>
-            <title>Categories</title>
+            <title>Seano - Categories</title>
+            <meta name="description" content="All of our product categories" />
          </Head>
 
          <section className="px-4 lg:container lg:mx-auto  py-5">

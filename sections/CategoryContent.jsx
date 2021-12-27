@@ -5,7 +5,7 @@ export default function CategoryContent({ category }) {
       <>
          <div className="grid grid-cols-12 gap-4">
             <div className="hidden sm:block  col-span-3 text-gray-500">
-               <h3 className="h3">Categories</h3>
+               <h2 className="h3">Categories</h2>
 
                <div className="max-w-[15rem] mt-6">
                   <Disclus title={category.name} content={category.subcategories} option={{ defaultOpen: true }} />

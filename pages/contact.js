@@ -6,7 +6,8 @@ export default function Contact() {
    return (
       <>
          <Head>
-            <title>Contact us</title>
+            <title>Seano - Contact us</title>
+            <meta name="description" content="Contact Seano Team" />
          </Head>
 
          <section className="px-4 lg:container lg:mx-auto  py-5">

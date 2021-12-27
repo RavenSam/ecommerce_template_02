@@ -23,6 +23,7 @@ export default function MiniCart() {
          <button
             className="relative rounded-full inline-block p-2 transition duration-200 hover:bg-gray-100 active:bg-gray-300 "
             onClick={() => setOpen(!open)}
+            aria-label="Shopping Cart"
          >
             <ShoppingCartIcon className="w-6 h-6" />
 

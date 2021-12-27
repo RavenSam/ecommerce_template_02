@@ -7,7 +7,7 @@ export default function CatgoriesContent({ categories }) {
       <>
          <div className="grid grid-cols-12 gap-4">
             <div className="hidden sm:block col-span-3 text-gray-500">
-               <h3 className="h3 text-gray-700">Categories</h3>
+               <h2 className="h3 text-gray-700">Categories</h2>
 
                <div className="max-w-[15rem] mt-6">
                   {categories.map((item, i) => (
@@ -27,7 +27,7 @@ export default function CatgoriesContent({ categories }) {
                      <Link href={`/category/${cat.slug}`} key={i}>
                         <a className="h-48 sm:h-64 group">
                            <div className="relative h-full rounded-md overflow-hidden bg-gray-800">
-                              <Image src={cat.image} layout="fill" objectFit="cover" />
+                              <Image src={cat.image} alt={cat.name} layout="fill" objectFit="cover" />
                               <div className="absolute inset-0 bg-black bg-opacity-75" />
 
                               <div className="text-white text-center w-full absolute bottom-0 left-0 p-4 transform translate-y-[70%] group-hover:translate-y-0 transition duration-300 ease-in">
