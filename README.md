@@ -1,21 +1,8 @@
 # Seano
 
-An e-commerce project created using the [NextJS](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com).
+An E-commerce project created using the [NextJS](https://nextjs.org) and [TailwindCSS](https://tailwindcss.com).
 
 [Website Demo](https://seano.vercel.app/)
-
-### Pages
-
-- Home page
-- Product Page
-- Categories page
-- Category page
-- Checkout page
-- Log in page
-- Sign up page
-- Reset password page
-- Contact page
-- About Page
 
 ## Installation
 
@@ -43,3 +30,16 @@ npm run dev
 yarn dev
 
 ```
+
+### Pages
+
+- Home page
+- Product Page
+- Categories page
+- Category page
+- Checkout page
+- Log in page
+- Sign up page
+- Reset password page
+- Contact page
+- About Page
