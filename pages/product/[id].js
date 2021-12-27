@@ -3,6 +3,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { useRecoilState } from "recoil"
 import { viewProductState } from "../../atoms/productAtom"
+import LoadingScreen from "../../components/shared/Loading"
 import { getPaths, getProduct } from "../../lib/fetchProduct"
 
 import { Reviews, SimilarProduct, ProductDescriptions, ProductDetails } from "../../sections"
@@ -19,7 +20,7 @@ export default function Product({ product }) {
    }, [product])
 
    if (router.isFallback) {
-      return <p>Loading</p>
+      return <LoadingScreen />
    }
 
    return (
@@ -48,26 +49,24 @@ export default function Product({ product }) {
    )
 }
 
+export async function getStaticPaths() {
+   const paths = await getPaths()
+
+   return { paths, fallback: true }
+}
+
 export async function getStaticProps(context) {
    const { id } = context.params
-   try {
-      const { data } = await getProduct(id)
 
-      return {
-         props: { product: data },
-      }
-   } catch (error) {
+   const { data } = await getProduct(id)
+
+   if (!data) {
       return {
          notFound: true,
       }
    }
-}
-
-export async function getStaticPaths() {
-   const paths = await getPaths()
 
    return {
-      paths,
-      fallback: true,
+      props: { product: data },
    }
 }

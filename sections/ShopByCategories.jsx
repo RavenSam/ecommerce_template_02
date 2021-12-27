@@ -1,7 +1,17 @@
 import Slider from "react-slick"
 import Image from "next/image"
+import { useEffect, useState } from "react"
+import { getCategories } from "../lib/fetchProduct"
 
 export default function ShopByCategories() {
+   const [categories, setCategories] = useState([])
+
+   useEffect(async () => {
+      const { data } = await getCategories()
+
+      setCategories(data)
+   }, [])
+
    const settings = {
       infinite: false,
       speed: 500,
@@ -42,14 +52,14 @@ export default function ShopByCategories() {
 
          <div className="overflow-x-hidden px-4">
             <Slider {...settings}>
-               {[...Array(6)].map((img, i) => (
+               {categories.map((cat, i) => (
                   <div key={i} className="">
                      <div className="relative w-auto max-w-xl rounded-md overflow-hidden h-64 bg-gray-800 mx-4">
-                        <Image src="/shop.jpg" layout="fill" objectFit="cover" />
+                        <Image src={cat.image} layout="fill" objectFit="cover" />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#000000b8]" />
 
                         <div className="text-white text-center w-full absolute bottom-0 left-0 p-4">
-                           <h3 className="text-xl font-semibold tracking-wider mb-4">Category {i + 1}</h3>
+                           <h3 className="text-xl font-semibold tracking-wider mb-4">{cat.name}</h3>
                         </div>
                      </div>
                   </div>

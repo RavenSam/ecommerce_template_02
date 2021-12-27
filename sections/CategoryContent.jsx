@@ -1,12 +1,6 @@
-import { useRouter } from "next/router"
 import { FilterProduct, ProductCard2, Pagination, Disclus } from "../components"
-import { categoryItems } from "../utils/data"
 
-export default function CategoryContent() {
-   const { asPath } = useRouter()
-
-   const catName = asPath.split("/")[2]
-
+export default function CategoryContent({ category }) {
    return (
       <>
          <div className="grid grid-cols-12 gap-4">
@@ -14,7 +8,7 @@ export default function CategoryContent() {
                <h3 className="h3">Categories</h3>
 
                <div className="max-w-[15rem] mt-6">
-                  <Disclus title={catName} content={categoryItems[catName]} option={{ defaultOpen: true }} />
+                  <Disclus title={category.name} content={category.subcategories} option={{ defaultOpen: true }} />
                </div>
             </div>
 

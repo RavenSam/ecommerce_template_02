@@ -3,6 +3,7 @@ import Image from "next/image"
 import { TrashIcon } from "@heroicons/react/outline"
 import { useRecoilState } from "recoil"
 import { cartState } from "../atoms/cartAtom"
+import toast from "react-hot-toast"
 
 export default function ProductInCart({ setOpen }) {
    const [cart, setCart] = useRecoilState(cartState)
@@ -60,7 +61,9 @@ export default function ProductInCart({ setOpen }) {
                <div className="text-center py-16">
                   <p className="text-gray-600 font-bold tracking-wider">Nothing in your cart!</p>
                   <Link href="/category">
-                     <a className="btn-2 mt-8 inline-block">Add Items</a>
+                     <a className="btn-2 mt-8 inline-block" onClick={() => setOpen(false)}>
+                        Add Items
+                     </a>
                   </Link>
                </div>
             )}

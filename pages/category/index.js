@@ -1,8 +1,9 @@
 import Head from "next/head"
 import { Banner } from "../../components"
 import { CatgoriesContent } from "../../sections"
+import { getCategories } from "../../lib/fetchProduct"
 
-export default function Categories() {
+export default function Categories({ categories }) {
    return (
       <>
          <Head>
@@ -14,8 +15,22 @@ export default function Categories() {
          </section>
 
          <section className="px-4 lg:container lg:mx-auto py-4">
-            <CatgoriesContent />
+            <CatgoriesContent categories={categories} />
          </section>
       </>
    )
+}
+
+export async function getStaticProps(context) {
+   const { data } = await getCategories()
+
+   if (!data) {
+      return {
+         notFound: true,
+      }
+   }
+
+   return {
+      props: { categories: data },
+   }
 }
