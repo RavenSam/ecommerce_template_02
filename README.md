@@ -4,6 +4,8 @@ An E-commerce project created using the [NextJS](https://nextjs.org) and [Tailwi
 
 [Website Demo](https://seano.vercel.app/)
 
+![Seano frontstore screenshots](https://raw.githubusercontent.com/RavenSam/seano/main/public/screenshots/seano%20fronstore%20screenshot%20.png)
+
 ## Installation
 
 This project requires [node](http://nodejs.org) and [npm](https://npmjs.com) installed globally.
