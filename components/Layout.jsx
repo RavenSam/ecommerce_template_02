@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast"
 const pageWithNoNav = ["/login", "/signup", "/reset-password"]
 
 export default function Layout({ children }) {
-   const { pathname, beforePopState } = useRouter()
+   const { pathname } = useRouter()
 
    return (
       <>

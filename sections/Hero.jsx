@@ -23,7 +23,7 @@ const carouselDetails = [
 
 export default function Hero() {
    return (
-      <div>
+      <div className="">
          <CarouselImages carouselDetails={carouselDetails} />
       </div>
    )
