@@ -33,7 +33,7 @@ export default function ProductGallery({ colors, productColor, setProductColor }
                <Image src="/products/shirt.png" alt="product image" layout="fill" objectFit="contain" quality={100} />
             </div>
 
-            <div className=" mt-4 px-8">
+            <div className=" mt-4">
                <Slider {...settings}>
                   {[1, 2, 3, 4, 5, 6].map((img, i) => (
                      <div

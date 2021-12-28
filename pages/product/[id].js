@@ -30,7 +30,7 @@ export default function Product({ product }) {
             <meta name="description" content={product.description} />
          </Head>
 
-         <section className="lg:container lg:mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 lg:gap-4 mt-10 py-5">
+         <section className="lg:container lg:mx-auto  mt-10 py-5">
             <ProductDetails colors={colors} productColor={productColor} setProductColor={setProductColor} />
          </section>
 

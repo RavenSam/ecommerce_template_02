@@ -16,7 +16,7 @@ export default function CarouselImages({ carouselDetails }) {
 
    return (
       <div className="relative">
-         <div className="w-full h-[50vh] md:h-[70vh] overflow-hidden">
+         <div className="w-full h-[65vh] overflow-hidden">
             {carouselDetails.map((item, i) => (
                <Fragment key={i}>
                   <Transition

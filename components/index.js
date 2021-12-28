@@ -17,6 +17,7 @@ export { default as HeaderNav } from "./HeaderNav"
 export { default as ProductInCart } from "./ProductInCart"
 export { default as CheckoutForm } from "./CheckoutForm"
 export { default as FilterProduct } from "./FilterProduct"
+export { default as QuickView } from "./QuickView"
 
 export { default as Pagination } from "./shared/Pagination"
 export { default as MenuDrop } from "./shared/MenuDrop"
