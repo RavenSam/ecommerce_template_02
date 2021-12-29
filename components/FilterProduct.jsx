@@ -7,11 +7,11 @@ const priceFilter = ["< $20", "< $40", "< $80", "< $100", "< $500"]
 const sortFilter = ["most relevant", "popular", "new"]
 
 const display = [
-   { id: 1, title: "View Grid", icon: ViewGridIcon },
-   { id: 2, title: "View List", icon: ViewListIcon },
+   { id: 1, title: "View Grid", value: "grid", icon: ViewGridIcon },
+   { id: 2, title: "View List", value: "list", icon: ViewListIcon },
 ]
 
-export default function FilterProduct() {
+export default function FilterProduct({ view, setView }) {
    return (
       <div className="flex items-center justify-between mb-8 space-x-2">
          <button
@@ -37,8 +37,9 @@ export default function FilterProduct() {
                      key={item.id}
                      title={item.title}
                      className={`p-2  text-black rounded-md focus:ring-2 focus:ring-blue-500 ${
-                        item.id === 1 ? "bg-gray-300" : "hover:bg-gray-200"
+                        item.value === view ? "bg-gray-300" : "hover:bg-gray-200"
                      }`}
+                     onClick={() => setView(item.value === "grid" ? "grid" : "list")}
                   >
                      <item.icon className="h-5 w-5" />
                   </button>

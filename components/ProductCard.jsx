@@ -1,11 +1,11 @@
 import Image from "next/image"
-import { ArrowsExpandIcon, ExternalLinkIcon, HeartIcon } from "@heroicons/react/outline"
+import { ExternalLinkIcon, HeartIcon } from "@heroicons/react/outline"
 import Link from "next/link"
 import QuickView from "./QuickView"
 
 export default function ProductCard({ product = {} }) {
    return (
-      <div className=" relative group p-4 rounded-md min-w-[260px] max-w-[300px]  overflow-hidden">
+      <div className=" relative group p-4 rounded-md min-w-[250px] max-w-[300px]  overflow-hidden cursor-pointer">
          <div className="w-full  overflow-hidden h-64 ">
             <div className="relative w-full h-full ">
                <Image src={product.image || "/products/shirt.png"} alt="product" layout="fill" objectFit="cover" />

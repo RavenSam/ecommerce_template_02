@@ -1,6 +1,9 @@
-import { FilterProduct, ProductCard2, Pagination, Disclus } from "../components"
+import { useState } from "react"
+import { FilterProduct, Pagination, Disclus, ProductCard, ProductList } from "../components"
 
 export default function CategoryContent({ category }) {
+   const [view, setView] = useState("grid")
+
    return (
       <>
          <div className="grid grid-cols-12 gap-4">
@@ -13,15 +16,26 @@ export default function CategoryContent({ category }) {
             </div>
 
             <div className="col-span-12 sm:col-span-9">
-               <FilterProduct />
+               <FilterProduct view={view} setView={setView} />
 
-               <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
-                  {[...Array(8)].map((item, i) => (
-                     <ProductCard2 key={i} />
-                  ))}
-               </div>
-
-               <div className="mt-8 flex items-center justify-center w-full">
+               {view === "grid" ? (
+                  <div className="grid" style={{ gridTemplateColumns: "repeat(auto-fit,minmax(230px,1fr)" }}>
+                     {[...Array(8)].map((item, i) => (
+                        <div key={i} className="justify-self-center">
+                           <ProductCard />
+                        </div>
+                     ))}
+                  </div>
+               ) : (
+                  <div className="w-full max-w-3xl p-2">
+                     <div className="space-y-4">
+                        {[...Array(8)].map((item, i) => (
+                           <ProductList key={i} />
+                        ))}
+                     </div>
+                  </div>
+               )}
+               <div className="mt-12 flex items-center justify-center w-full">
                   <Pagination />
                </div>
             </div>

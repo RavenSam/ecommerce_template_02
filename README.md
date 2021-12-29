@@ -35,13 +35,14 @@ yarn dev
 
 ### Pages
 
-- Home page
-- Product Page
-- Categories page
-- Category page
-- Checkout page
-- Log in page
-- Sign up page
-- Reset password page
-- Contact page
-- About Page
+-  Home page
+-  Product Page
+-  Categories page
+-  Category page
+-  Checkout page
+-  Log in page
+-  Sign up page
+-  Reset password page
+-  Contact page
+-  About Page
+-  Search Page
