@@ -1,6 +1,11 @@
 import { atom } from "recoil"
 
 export const viewProductState = atom({
-   key: "viewProductState",
+   key: "viewProduct",
+   default: {},
+})
+
+export const selectedVarientState = atom({
+   key: "selectedVarient",
    default: {},
 })

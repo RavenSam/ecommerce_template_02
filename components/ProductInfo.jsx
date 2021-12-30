@@ -21,7 +21,8 @@ export default function ProductInfo({ productColor }) {
       // return product if the product in cart and the product to add
       //  have the same id & color & size else return undefined
       const findProduct = cart.find(
-         (item) => item.id === query.id && item.varient.color === productColor && item.varient.size === selectedSize
+         (item) =>
+            item.id === query.id && item.varient.color === productColor.color && item.varient.size === selectedSize
       )
 
       // if product exist add qty
@@ -53,7 +54,7 @@ export default function ProductInfo({ productColor }) {
          <div className="mt-4 md:mt-0">
             <h1 className=" h1">{viewProduct.name}</h1>
 
-            <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor }} />
+            <hr className="border-2 rounded-full w-[20%] my-2" style={{ borderColor: productColor.hex }} />
 
             <div className="flex items-center mt-2 py-2">
                <div className="flex items-center">
@@ -94,7 +95,7 @@ export default function ProductInfo({ productColor }) {
                      {size === selectedSize && (
                         <span
                            className="w-3 h-3  absolute -top-1 -right-1 rounded-full elevation-3"
-                           style={{ backgroundColor: productColor }}
+                           style={{ backgroundColor: productColor.hex }}
                         />
                      )}
                   </button>

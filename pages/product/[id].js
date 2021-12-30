@@ -2,24 +2,34 @@ import Head from "next/head"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import { useRecoilState } from "recoil"
-import { viewProductState } from "../../atoms/productAtom"
+import { selectedVarientState, viewProductState } from "../../atoms/productAtom"
 import LoadingScreen from "../../components/shared/Loading"
 import { getPaths, getProduct } from "../../lib/fetchProduct"
 
 import { Reviews, SimilarProduct, ProductDescriptions, ProductDetails } from "../../sections"
 
-const colors = ["pink", "cyan", "blue", "red", "black"]
-
 export default function Product({ product }) {
-   const [viewProduct, setViewProduct] = useRecoilState(viewProductState)
-   const [productColor, setProductColor] = useState(colors[0])
+   const [colors, setColors] = useState([])
+   const [productColor, setProductColor] = useState()
    const router = useRouter()
+   const [viewProduct, setViewProduct] = useRecoilState(viewProductState)
+   const [selectedVarient, setSelectedVarient] = useRecoilState(selectedVarientState)
 
    useEffect(() => {
       setViewProduct(product)
+      setSelectedVarient(product.varients[0])
+      setColors(
+         product.varients.map((x) => {
+            return { color: x.color, hex: x.hex }
+         })
+      )
    }, [product])
 
-   if (router.isFallback) {
+   useState(() => {
+      setProductColor({ color: selectedVarient.color, hex: selectedVarient.hex })
+   }, [product, productColor, selectedVarient])
+
+   if (router.isFallback || !selectedVarient.images) {
       return <LoadingScreen />
    }
 

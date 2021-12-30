@@ -43,91 +43,247 @@
          "items": [
             {
                "id": "GGOEAFKA087499",
-               "name": "Android Small Removable Sticker Sheet",
+               "name": "Comfort Colors Men's Adult Short Sleeve Tee, Style 1717",
                "description": "Show your Android pride by placing these 8 fun stickers on your technology products or accessories!",
-               "features": "<p>8 Android stickers</p>\n<p>White colored sticker sheet</p>",
                "price": "2.99",
-               "keywords": "Android Small Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, small sticker sheet, android small sticker sheets, Android Sheet",
-               "url": "Android+Small+Removable+Sticker+Sheet",
-               "category": "accessories",
-               "subcategory": "accessories"
+               "category": "men",
+               "subcategory": "shirt",
+               "featuredImage": "/products/1/white/1.jpg" ,
+               "dir":1,
+               "varients":[
+                     {
+                     "color":"white",
+                     "hex":"#eee",
+                     "images":[ "/products/1/white/1.jpg" ,"/products/1/white/2.jpg" ,"/products/1/white/3.jpg" ]
+                  },
+                     {
+                     "color":"berry",
+                     "hex":"#343456",
+                     "images":[ "/products/1/berry/1.jpg" ,"/products/1/berry/2.jpg" ,"/products/1/berry/3.jpg" ]
+                  },
+                  {
+                     "color":"black",
+                     "hex":"#333",
+                     "images":[ "/products/1/black/1.jpg" ,"/products/1/black/2.jpg" ,"/products/1/black/3.jpg" ]
+                  },
+                  {
+                     "color":"hemp",
+                     "hex":"#3456",
+                     "images":[ "/products/1/hemp/1.jpg" ,"/products/1/hemp/2.jpg" ,"/products/1/hemp/3.jpg" ]
+                  },
+                  {
+                     "color":"periwinkle",
+                     "hex":"#fff",
+                     "images":[ "/products/1/periwinkle/1.jpg" ,"/products/1/periwinkle/2.jpg" ,"/products/1/periwinkle/3.jpg" ]
+                  },
+                   {
+                     "color":"violet",
+                     "hex":"#fff",
+                     "images":[ "/products/1/violet/1.jpg" ,"/products/1/violet/2.jpg" ,"/products/1/violet/3.jpg" ]
+                  },
+                  {
+                     "color":"wine",
+                     "hex":"#fff",
+                     "images":[ "/products/1/wine/1.jpg" ,"/products/1/wine/2.jpg" ,"/products/1/wine/3.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEAFKA087599",
-               "name": "Android Large Removable Sticker Sheet",
+               "name": "Gildan Women's Softstyle Cotton T-Shirt, Style G64000l, 2-Pack",
                "description": "Show your quirky side by placing these fun Android stickers on your personal belongings.",
-               "features": "<p>Android Stickers</p>\n<p>White Colored Sticker Sheet</p>",
                "price": "2.99",
-               "keywords": "Android Large Removable Sticker Sheet, android stickers, sticker sheets, removable sticker sheets, large sticker sheet, android large sticker sheets, Android Sheet",
-               "url": "Android+Large+Removable+Sticker+Sheet",
-               "category": "accessories",
-               "subcategory": "accessories"
+               "category": "women",
+               "subcategory": "shirt",
+               "featuredImage": "/products/2/red/1.jpg" ,
+               "dir":2,
+                "varients":[
+                   {
+                     "color":"red",
+                     "hex":"#fff",
+                     "images":[ "/products/2/red/1.jpg" ,"/products/2/red/2.jpg" ,"/products/2/red/3.jpg" ]
+                  },
+                     {
+                     "color":"azalea",
+                     "hex":"#fff",
+                     "images":[ "/products/2/azalea/1.jpg" ,"/products/2/azalea/2.jpg" ,"/products/2/azalea/3.jpg","/products/2/azalea/4.jpg" ]
+                  },
+                  {
+                     "color":"black",
+                     "hex":"#fff",
+                     "images":[ "/products/2/black/1.jpg" ,"/products/2/black/2.jpg" ,"/products/2/black/3.jpg" ,"/products/2/black/4.jpg"]
+                  },
+                  {
+                     "color":"heather_purple",
+                     "hex":"#fff",
+                     "images":[ "/products/2/heather_purple/1.jpg" ,"/products/2/heather_purple/2.jpg" ,"/products/2/heather_purple/3.jpg" ]
+                  },
+                  {
+                     "color":"navy",
+                     "hex":"#fff",
+                     "images":[ "/products/2/navy/1.jpg" ,"/products/2/navy/2.jpg" ,"/products/2/navy/3.jpg" ,"/products/2/navy/4.jpg"]
+                  },
+                  {
+                     "color":"royal",
+                     "hex":"#fff",
+                     "images":[ "/products/2/royal/1.jpg" ,"/products/2/royal/2.jpg" ,"/products/2/royal/3.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEGEBK094499",
-               "name": "Google Bot",
+               "name": "Comfort Colors Men's Adult Long Sleeve Tee, Style 6014",
                "description": "This Google Bot can hold multiple poses making it a fun toy for all. Fold the Google Bot back up into a perfect cube when you are done playing.",
-               "features": "<p>Made of wood</p>\n<p>2.5 x 2.5 inch cube</p>\n<p>6.75 inch tall</p>\n<p>Recommended for Ages 3+</p>",
                "price": "9.99",
-               "keywords": "Google Bot, google bot, bots, natural bots, wood bot, google wood bot",
-               "url": "Google+Bot",
-               "category": "accessories",
-               "subcategory": "accessories"
+               "category": "men",
+               "subcategory": "shirt",
+               "featuredImage": "/products/3/white/1.jpg" ,
+               "dir":3,
+               "varients":[
+                    {
+                     "color":"white",
+                     "hex":"#fff",
+                     "images":[ "/products/3/white/1.jpg" ,"/products/3/white/2.jpg" ,"/products/3/white/3.jpg" ]
+                  },
+                  {
+                     "color":"neon_pink",
+                     "hex":"#fff",
+                     "images":[ "/products/3/neon_pink/1.jpg" ,"/products/3/neon_pink/2.jpg" ,"/products/3/neon_pink/3.jpg" ]
+                  },
+                  {
+                     "color":"grass",
+                     "hex":"#fff",
+                     "images":[ "/products/3/grass/1.jpg" ,"/products/3/grass/2.jpg" ,"/products/3/grass/3.jpg" ]
+                  },
+                    {
+                     "color":"crunchberry",
+                     "hex":"#fff",
+                     "images":[ "/products/3/crunchberry/1.jpg" ,"/products/3/crunchberry/2.jpg" ,"/products/3/crunchberry/3.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEGFKA086699",
-               "name": "Google Emoji Sticker Pack",
+               "name": "Jescakoo Tunic Tops for Leggings for Women Long Sleeve V Neck T Shirts Casual Loose Fit",
                "description": "Who doesn't use emojis? Decorate your space with your current mood!",
-               "features": "<p>Pack contains two sticker sheets</p>\n<p>Each Sheet has different emojis</p>\n<p><span>Decal dimensions should fit in a maximum sheet size of 12 3/4 x 17 1/2 inch.</span></p>",
                "price": "4.99",
-               "keywords": "Google Emoji Sticker Pack, Google sticker pack, emoji sticker pack, google emoji, stickers, pack of sticker, pack of emoji stickers",
-               "url": "Google+Emoji+Sticker+Pack+2+sheet",
-               "category": "accessories",
-               "subcategory": "accessories"
+               "category": "women",
+               "subcategory": "accessories",
+               "featuredImage": "/products/4/red/1.jpg" ,
+               "dir":4,
+               "varients":[
+                    {
+                     "color":"red",
+                     "hex":"#fff",
+                     "images":[ "/products/4/red/1.jpg" ,"/products/4/red/2.jpg" ,"/products/4/red/3.jpg" ]
+                  },
+                  {
+                     "color":"wine_red",
+                     "hex":"#fff",
+                     "images":[ "/products/4/wine_red/1.jpg" ,"/products/4/wine_red/2.jpg" ,"/products/4/wine_red/3.jpg" ]
+                  },
+                  {
+                     "color":"dark_grey",
+                     "hex":"#fff",
+                     "images":[ "/products/4/dark_grey/1.jpg" ,"/products/4/dark_grey/2.jpg" ,"/products/4/dark_grey/3.jpg" ]
+                  },
+                    {
+                     "color":"black",
+                     "hex":"#fff",
+                     "images":[ "/products/4/black/1.jpg" ,"/products/4/black/2.jpg" ,"/products/4/black/3.jpg" ,"/products/4/black/4.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEWCKQ085457",
-               "name": "Waze Pack of 9 Decal Set",
+               "name": "Inkopious Modern Mama Square T-Shirt",
                "description": "Can't decide which Waze decal to get? We have made that decision easier for you! Now you can purchase a pack of nine Waze Mood Decals!",
-               "features": "<p>Pack of 9 includes:</p>\n<p>3 Waze Mood Happy decals</p>\n<p>3 Waze Mood Original decals</p>\n<p>3 Waze Mood Ninja decals</p>",
                "price": "16.99",
-               "keywords": "Waze Pack of 9 Decal Set, decals pack, packs of 9, Waze Packs, Waze Decals, waze, Waze",
-               "url": "Waze+Pack+of+9+decal+set",
-               "category": "accessories",
-               "subcategory": "accessories"
+               "category": "women",
+               "subcategory": "accessories",
+               "featuredImage": "/products/5/mauve_crewneck/1.jpg" ,
+               "dir":5,
+               "varients":[
+                    {
+                     "color":"mauve_crewneck",
+                     "hex":"#fff",
+                     "images":[ "/products/5/mauve_crewneck/1.jpg" ,"/products/5/mauve_crewneck/2.jpg"]
+                  },
+                  {
+                     "color":"grey",
+                     "hex":"#fff",
+                     "images":[ "/products/5/grey/1.jpg" ,"/products/5/grey/2.jpg" ,"/products/5/grey/3.jpg" ]
+                  },
+                  {
+                     "color":"orchid_crewneck",
+                     "hex":"#fff",
+                     "images":[ "/products/5/orchid_crewneck/1.jpg" ,"/products/5/orchid_crewneck/2.jpg"  ]
+                  },
+                    {
+                     "color":"peach_crewneck",
+                     "hex":"#fff",
+                     "images":[ "/products/5/peach_crewneck/1.jpg" ,"/products/5/peach_crewneck/2.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEGHPB071610",
-               "name": "Google Twill Cap",
+               "name": "Comfort Colors Men's Adult 1/4 Zip Sweatshirt, Style 1580",
                "description": "Classic urban styling distinguishes this Google cap. Retains its shape, even when not being worn.",
-               "features": "<p>Heavy weight brushed twill</p>\n<p>Adjustable velcro closure</p>\n<p>One size fits all</p>",
                "price": "10.99",
-               "keywords": "Google Twill Cap, Google Cap, Google Twill Caps, Google Twill, google cap, google caps, google twill, google twill black cap, google black caps, google caps, black caps, Google Caps",
-               "url": "Google+Twill+Cap",
-               "category": "apparel",
-               "subcategory": "apparel"
+               "category": "men",
+               "subcategory": "apparel",
+               "featuredImage": "/products/6/crimson/1.jpg" ,
+               "dir":6,
+               "varients":[
+                    {
+                     "color":"crimson",
+                     "hex":"#fff",
+                     "images":[ "/products/6/crimson/1.jpg" ,"/products/6/crimson/2.jpg" ,"/products/6/crimson/3.jpg" ]
+                  },
+                  {
+                     "color":"seafoam",
+                     "hex":"#fff",
+                     "images":[ "/products/6/seafoam/1.jpg" ,"/products/6/seafoam/2.jpg" ,"/products/6/seafoam/3.jpg" ]
+                  },
+                  {
+                     "color":"steel_grey",
+                     "hex":"#fff",
+                     "images":[ "/products/6/steel_grey/1.jpg" ,"/products/6/steel_grey/2.jpg" ,"/products/6/steel_grey/3.jpg" ]
+                  }
+               ]
             },
             {
                "id": "GGOEGHPJ094299",
-               "name": "Google Fold-over Beanie Grey",
+               "name": "Natural Uniforms Women's Under Scrub Tee Crew Neck Long Sleeve T-Shirt",
                "description": "Keep you ears warm while enjoying a cold winter day with this Google Fold-over Beanie.",
-               "features": "<p>100% acrylic</p>\n<p>One size fits all</p>",
                "price": "9.99",
-               "keywords": "Google Fold-over Beanie Grey, gray beanie, grey beanie, Google Beanies, Fold over grey, Google Beanie Grey, Google headgear",
-               "url": "Google+Fold+over+beanie+grey",
-               "category": "apparel",
-               "subcategory": "apparel"
-            },
-            {
-               "id": "GGOEGHPJ094399",
-               "name": "Google Pom Beanie Charcoal",
-               "description": "Stay stylish and warm this winter season with this Google Pom Beanie.",
-               "features": "<p>Thick knit texture outside</p>\n<p>Soft plush inside</p>\n<p>Faux fur pom on top</p>",
-               "price": "19.99",
-               "keywords": "Google Pom Beanie Charcoal, pom beanie, charcoal pom beanies, Google Beanies, Pom Beanies, charcoal Google pom, beanies, headgear",
-               "url": "Google+Pom+Beanie+Charcoal",
-               "category": "apparel",
-               "subcategory": "apparel"
+               "category": "women",
+               "subcategory": "apparel",
+               "featuredImage": "/products/7/grey/1.jpg" ,
+               "dir":7,
+               "varients":[
+                    {
+                     "color":"grey",
+                     "hex":"#fff",
+                     "images":[ "/products/7/grey/1.jpg" ,"/products/7/grey/2.jpg" ,"/products/7/grey/3.jpg" ,"/products/7/grey/4.jpg" ,"/products/7/grey/5.jpg" ,"/products/7/grey/6.jpg" ]
+                  },
+                   {
+                     "color":"black",
+                     "hex":"#fff",
+                     "images":[ "/products/7/black/1.jpg" ,"/products/7/black/2.jpg" ,"/products/7/black/3.jpg" ,"/products/7/black/4.jpg" ,"/products/7/black/5.jpg" ,"/products/7/black/6.jpg" ]
+                  },
+                   {
+                     "color":"white",
+                     "hex":"#fff",
+                     "images":[ "/products/7/white/1.jpg" ,"/products/7/white/2.jpg" ,"/products/7/white/3.jpg" ,"/products/7/white/4.jpg" ,"/products/7/white/5.jpg" ,"/products/7/white/6.jpg" ]
+                  },
+                   {
+                     "color":"neon_pink",
+                     "hex":"#fff",
+                     "images":[ "/products/7/neon_pink/1.jpg" ,"/products/7/neon_pink/2.jpg" ,"/products/7/neon_pink/3.jpg" ,"/products/7/neon_pink/4.jpg" ,"/products/7/neon_pink/5.jpg" ]
+                  }
+               ]
             }
            
          ]
