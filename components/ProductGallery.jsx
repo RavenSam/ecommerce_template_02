@@ -2,11 +2,11 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import Slider from "react-slick"
 import { useRecoilState } from "recoil"
-import { selectedVarientState } from "../atoms/productAtom"
+import { selectedVarientState, viewProductState } from "../atoms/productAtom"
 
 export default function ProductGallery({ colors, productColor, setProductColor }) {
    const [selectedVarient, setSelectedVarient] = useRecoilState(selectedVarientState)
-
+   const [viewProduct, setViewProduct] = useRecoilState(viewProductState)
    const [selectedImage, setSelectedImage] = useState(selectedVarient.images[0])
 
    const settings = {
@@ -14,6 +14,13 @@ export default function ProductGallery({ colors, productColor, setProductColor }
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
+   }
+
+   const changeColor = (color) => {
+      setProductColor(color)
+      const newVarient = viewProduct.varients.find((x) => x.color === color.color)
+      setSelectedVarient(newVarient)
+      setSelectedImage(newVarient.images[0])
    }
 
    return (
@@ -30,7 +37,7 @@ export default function ProductGallery({ colors, productColor, setProductColor }
                         border: `2px solid ${color.hex}`,
                         backgroundColor: color.color !== productColor.color && color.hex,
                      }}
-                     onClick={() => setProductColor(color)}
+                     onClick={() => changeColor(color)}
                      aria-label="color"
                   >
                      <span className="block w-full h-full rounded-full " style={{ backgroundColor: color.hex }} />

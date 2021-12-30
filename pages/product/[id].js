@@ -23,11 +23,9 @@ export default function Product({ product }) {
             return { color: x.color, hex: x.hex }
          })
       )
-   }, [product])
 
-   useState(() => {
-      setProductColor({ color: selectedVarient.color, hex: selectedVarient.hex })
-   }, [product, productColor, selectedVarient])
+      setProductColor({ color: product.varients[0].color, hex: product.varients[0].hex })
+   }, [product])
 
    if (router.isFallback || !selectedVarient.images) {
       return <LoadingScreen />

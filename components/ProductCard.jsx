@@ -8,14 +8,21 @@ export default function ProductCard({ product = {} }) {
       <div className=" relative group p-4 rounded-md min-w-[250px] max-w-[300px]  overflow-hidden cursor-pointer">
          <div className="w-full  overflow-hidden h-64 ">
             <div className="relative w-full h-full ">
-               <Image src={product.image || "/products/shirt.png"} alt="product" layout="fill" objectFit="cover" />
+               <Image
+                  src={product.featuredImage || "/products/shirt.png"}
+                  alt="product"
+                  layout="fill"
+                  objectFit="cover"
+               />
             </div>
          </div>
 
          <div className="mt-4 flex justify-between font-semibold">
             <div>
                <Link href={`/product/${product.id}`}>
-                  <a className=" capitalize">{product.name || "Name"}</a>
+                  <a title={product.name} className="capitalize">
+                     {product.name || "Name"}
+                  </a>
                </Link>
             </div>
             <p className="text-sm font-medium text-gray-900">${product.price}</p>

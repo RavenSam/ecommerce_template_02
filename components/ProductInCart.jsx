@@ -20,8 +20,8 @@ export default function ProductInCart({ setOpen }) {
                <ul role="list" className="-my-6 divide-y divide-gray-200">
                   {cart.map((product, i) => (
                      <li key={i} className="py-6 flex">
-                        <div className="relative flex-shrink-0 w-24 h-24 border border-gray-200 rounded-md overflow-hidden">
-                           <Image src="/products/shirt.png" alt={product.title} layout="fill" objectFit="cover" />
+                        <div className="relative flex-shrink-0 w-28 h-28 border border-gray-200 rounded-md overflow-hidden">
+                           <Image src={product.imgVarient} alt={product.title} layout="fill" objectFit="contain" />
                         </div>
 
                         <div className="ml-4 flex-1 flex flex-col">
@@ -35,7 +35,7 @@ export default function ProductInCart({ setOpen }) {
                                  <p className="ml-4">${product.price}</p>
                               </div>
                               <p className="mt-1 text-sm text-gray-500 space-x-2">
-                                 <span className="capitalize">{product.varient.color}</span>
+                                 <span className="capitalize">{product.varient.color.color}</span>
                                  <span>&#8226;</span>
                                  <span className="uppercase">{product.varient.size}</span>
                               </p>

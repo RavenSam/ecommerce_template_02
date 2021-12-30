@@ -41,6 +41,7 @@ export default function ProductInfo({ productColor }) {
                cartId: cart.length + Math.random(),
                qty,
                varient: { color: productColor, size: selectedSize },
+               imgVarient: viewProduct.varients.find((x) => x.color === productColor.color).images[0],
             },
          ]
 
