@@ -53,17 +53,17 @@
                "varients":[
                      {
                      "color":"white",
-                     "hex":"#eee",
+                     "hex":"#c4c4ce",
                      "images":[ "/products/1/white/1.jpg" ,"/products/1/white/2.jpg" ,"/products/1/white/3.jpg" ]
                   },
                      {
                      "color":"berry",
-                     "hex":"#343456",
+                     "hex":"#7c495a",
                      "images":[ "/products/1/berry/1.jpg" ,"/products/1/berry/2.jpg" ,"/products/1/berry/3.jpg" ]
                   },
                   {
                      "color":"black",
-                     "hex":"#333",
+                     "hex":"#232323",
                      "images":[ "/products/1/black/1.jpg" ,"/products/1/black/2.jpg" ,"/products/1/black/3.jpg" ]
                   },
                   {
@@ -73,17 +73,17 @@
                   },
                   {
                      "color":"periwinkle",
-                     "hex":"#fff",
+                     "hex":"#424733",
                      "images":[ "/products/1/periwinkle/1.jpg" ,"/products/1/periwinkle/2.jpg" ,"/products/1/periwinkle/3.jpg" ]
                   },
                    {
                      "color":"violet",
-                     "hex":"#fff",
+                     "hex":"#968dd0",
                      "images":[ "/products/1/violet/1.jpg" ,"/products/1/violet/2.jpg" ,"/products/1/violet/3.jpg" ]
                   },
                   {
                      "color":"wine",
-                     "hex":"#fff",
+                     "hex":"#856c7f",
                      "images":[ "/products/1/wine/1.jpg" ,"/products/1/wine/2.jpg" ,"/products/1/wine/3.jpg" ]
                   }
                ]
@@ -100,32 +100,32 @@
                 "varients":[
                    {
                      "color":"red",
-                     "hex":"#fff",
+                     "hex":"#d51927",
                      "images":[ "/products/2/red/1.jpg" ,"/products/2/red/2.jpg" ,"/products/2/red/3.jpg" ]
                   },
                      {
                      "color":"azalea",
-                     "hex":"#fff",
+                     "hex":"#ec87bf",
                      "images":[ "/products/2/azalea/1.jpg" ,"/products/2/azalea/2.jpg" ,"/products/2/azalea/3.jpg","/products/2/azalea/4.jpg" ]
                   },
                   {
                      "color":"black",
-                     "hex":"#fff",
+                     "hex":"#1e1e1e",
                      "images":[ "/products/2/black/1.jpg" ,"/products/2/black/2.jpg" ,"/products/2/black/3.jpg" ,"/products/2/black/4.jpg"]
                   },
                   {
                      "color":"heather_purple",
-                     "hex":"#fff",
+                     "hex":"#6e609e",
                      "images":[ "/products/2/heather_purple/1.jpg" ,"/products/2/heather_purple/2.jpg" ,"/products/2/heather_purple/3.jpg" ]
                   },
                   {
                      "color":"navy",
-                     "hex":"#fff",
+                     "hex":"#4a516e",
                      "images":[ "/products/2/navy/1.jpg" ,"/products/2/navy/2.jpg" ,"/products/2/navy/3.jpg" ,"/products/2/navy/4.jpg"]
                   },
                   {
                      "color":"royal",
-                     "hex":"#fff",
+                     "hex":"#124c8c",
                      "images":[ "/products/2/royal/1.jpg" ,"/products/2/royal/2.jpg" ,"/products/2/royal/3.jpg" ]
                   }
                ]
@@ -142,22 +142,22 @@
                "varients":[
                     {
                      "color":"white",
-                     "hex":"#fff",
+                     "hex":"#dadae4",
                      "images":[ "/products/3/white/1.jpg" ,"/products/3/white/2.jpg" ,"/products/3/white/3.jpg" ]
                   },
                   {
                      "color":"neon_pink",
-                     "hex":"#fff",
+                     "hex":"#f9488e",
                      "images":[ "/products/3/neon_pink/1.jpg" ,"/products/3/neon_pink/2.jpg" ,"/products/3/neon_pink/3.jpg" ]
                   },
                   {
                      "color":"grass",
-                     "hex":"#fff",
+                     "hex":"#49a483",
                      "images":[ "/products/3/grass/1.jpg" ,"/products/3/grass/2.jpg" ,"/products/3/grass/3.jpg" ]
                   },
                     {
                      "color":"crunchberry",
-                     "hex":"#fff",
+                     "hex":"#ff6d9c",
                      "images":[ "/products/3/crunchberry/1.jpg" ,"/products/3/crunchberry/2.jpg" ,"/products/3/crunchberry/3.jpg" ]
                   }
                ]
@@ -174,22 +174,22 @@
                "varients":[
                     {
                      "color":"red",
-                     "hex":"#fff",
+                     "hex":"#9c0a14",
                      "images":[ "/products/4/red/1.jpg" ,"/products/4/red/2.jpg" ,"/products/4/red/3.jpg" ]
                   },
                   {
                      "color":"wine_red",
-                     "hex":"#fff",
+                     "hex":"#6e3339",
                      "images":[ "/products/4/wine_red/1.jpg" ,"/products/4/wine_red/2.jpg" ,"/products/4/wine_red/3.jpg" ]
                   },
                   {
                      "color":"dark_grey",
-                     "hex":"#fff",
+                     "hex":"#2b2a30",
                      "images":[ "/products/4/dark_grey/1.jpg" ,"/products/4/dark_grey/2.jpg" ,"/products/4/dark_grey/3.jpg" ]
                   },
                     {
                      "color":"black",
-                     "hex":"#fff",
+                     "hex":"#252525",
                      "images":[ "/products/4/black/1.jpg" ,"/products/4/black/2.jpg" ,"/products/4/black/3.jpg" ,"/products/4/black/4.jpg" ]
                   }
                ]
@@ -206,22 +206,22 @@
                "varients":[
                     {
                      "color":"mauve_crewneck",
-                     "hex":"#fff",
+                     "hex":"#cd8590",
                      "images":[ "/products/5/mauve_crewneck/1.jpg" ,"/products/5/mauve_crewneck/2.jpg"]
                   },
                   {
                      "color":"grey",
-                     "hex":"#fff",
+                     "hex":"#b8b9bd",
                      "images":[ "/products/5/grey/1.jpg" ,"/products/5/grey/2.jpg" ,"/products/5/grey/3.jpg" ]
                   },
                   {
                      "color":"orchid_crewneck",
-                     "hex":"#fff",
+                     "hex":"#c098b2",
                      "images":[ "/products/5/orchid_crewneck/1.jpg" ,"/products/5/orchid_crewneck/2.jpg"  ]
                   },
                     {
                      "color":"peach_crewneck",
-                     "hex":"#fff",
+                     "hex":"#eac2b6",
                      "images":[ "/products/5/peach_crewneck/1.jpg" ,"/products/5/peach_crewneck/2.jpg" ]
                   }
                ]
@@ -238,17 +238,17 @@
                "varients":[
                     {
                      "color":"crimson",
-                     "hex":"#fff",
+                     "hex":"#b94649",
                      "images":[ "/products/6/crimson/1.jpg" ,"/products/6/crimson/2.jpg" ,"/products/6/crimson/3.jpg" ]
                   },
                   {
                      "color":"seafoam",
-                     "hex":"#fff",
+                     "hex":"#749d95",
                      "images":[ "/products/6/seafoam/1.jpg" ,"/products/6/seafoam/2.jpg" ,"/products/6/seafoam/3.jpg" ]
                   },
                   {
                      "color":"steel_grey",
-                     "hex":"#fff",
+                     "hex":"#838385",
                      "images":[ "/products/6/steel_grey/1.jpg" ,"/products/6/steel_grey/2.jpg" ,"/products/6/steel_grey/3.jpg" ]
                   }
                ]
@@ -265,22 +265,22 @@
                "varients":[
                     {
                      "color":"grey",
-                     "hex":"#fff",
+                     "hex":"#bababa",
                      "images":[ "/products/7/grey/1.jpg" ,"/products/7/grey/2.jpg" ,"/products/7/grey/3.jpg" ,"/products/7/grey/4.jpg" ,"/products/7/grey/5.jpg" ,"/products/7/grey/6.jpg" ]
                   },
                    {
                      "color":"black",
-                     "hex":"#fff",
+                     "hex":"#393939",
                      "images":[ "/products/7/black/1.jpg" ,"/products/7/black/2.jpg" ,"/products/7/black/3.jpg" ,"/products/7/black/4.jpg" ,"/products/7/black/5.jpg" ,"/products/7/black/6.jpg" ]
                   },
                    {
                      "color":"white",
-                     "hex":"#fff",
+                     "hex":"#e4e3e8",
                      "images":[ "/products/7/white/1.jpg" ,"/products/7/white/2.jpg" ,"/products/7/white/3.jpg" ,"/products/7/white/4.jpg" ,"/products/7/white/5.jpg" ,"/products/7/white/6.jpg" ]
                   },
                    {
                      "color":"neon_pink",
-                     "hex":"#fff",
+                     "hex":"#f862c3",
                      "images":[ "/products/7/neon_pink/1.jpg" ,"/products/7/neon_pink/2.jpg" ,"/products/7/neon_pink/3.jpg" ,"/products/7/neon_pink/4.jpg" ,"/products/7/neon_pink/5.jpg" ]
                   }
                ]
