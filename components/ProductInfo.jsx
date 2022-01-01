@@ -6,6 +6,7 @@ import { useRecoilState, useRecoilValue } from "recoil"
 import { cartState } from "../atoms/cartAtom"
 import { viewProductState } from "../atoms/productAtom"
 import toast from "react-hot-toast"
+import { addToCart } from "../lib/helpers"
 
 const sizes = ["xs", "s", "m", "l", "xl"]
 
@@ -14,41 +15,7 @@ export default function ProductInfo({ productColor }) {
    const [qty, setQty] = useState(1)
    const [isOnWhishlist, setIsOnWhishlist] = useState(false)
    const [cart, setCart] = useRecoilState(cartState)
-   const { query } = useRouter()
    const viewProduct = useRecoilValue(viewProductState)
-
-   const addToCart = () => {
-      // return product if the product in cart and the product to add
-      //  have the same id & color & size else return undefined
-      const findProduct = cart.find(
-         (item) =>
-            item.id === query.id && item.varient.color === productColor.color && item.varient.size === selectedSize
-      )
-
-      // if product exist add qty
-      if (findProduct) {
-         const newCart = cart.map((item) =>
-            item.cartId === findProduct.cartId ? { ...findProduct, qty: findProduct.qty + +qty } : item
-         )
-
-         setCart(newCart)
-         toast.success("Item added to your cart")
-      } else {
-         const newCart = [
-            ...cart,
-            {
-               ...viewProduct,
-               cartId: cart.length + Math.random(),
-               qty,
-               varient: { color: productColor, size: selectedSize },
-               imgVarient: viewProduct.varients.find((x) => x.color === productColor.color).images[0],
-            },
-         ]
-
-         setCart(newCart)
-         toast.success("Item added to your cart")
-      }
-   }
 
    return (
       <>
@@ -123,7 +90,10 @@ export default function ProductInfo({ productColor }) {
          <div className="flex items-center mt-8 space-x-4 ">
             <button className="btn-1">buy now</button>
 
-            <button className="btn-2" onClick={addToCart}>
+            <button
+               className="btn-2"
+               onClick={() => addToCart(setCart, viewProduct, cart, productColor, selectedSize, qty)}
+            >
                add to cart
             </button>
 

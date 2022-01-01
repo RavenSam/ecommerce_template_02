@@ -6,7 +6,7 @@ const legals = ["claim", "privacy", "terms"]
 export default function Footer() {
    return (
       <footer className="bg-gray-900 text-white px-4 py-12 lg:px-24 mt-24">
-         <div className="lg:container  lg:mx-auto">
+         <div className="w-full max-w-7xl mx-auto">
             <div className="flex  justify-between ">
                <ul className="space-y-3">
                   <li className="font-semibold capitalize lg:text-lg">navigation</li>

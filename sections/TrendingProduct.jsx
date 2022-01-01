@@ -27,7 +27,11 @@ export default function TrendingProduct() {
          ) : (
             <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                {products.length > 0 ? (
-                  products.map((item, i) => <ProductCard product={item} key={i} />)
+                  products.map((item, i) => (
+                     <div key={i} className="justify-self-center ">
+                        <ProductCard product={item} />
+                     </div>
+                  ))
                ) : (
                   <div className="text-center col-span-full">
                      <p className=" text-gray-700">No trending product</p>

@@ -1,6 +1,4 @@
 import Head from "next/head"
-import { useEffect, useState } from "react"
-import LoadingScreen from "../components/shared/Loading"
 import { Discount, Services, ShopByCategories, TrendingProduct, ShopByCollections } from "../sections"
 import { CarouselImages } from "../components"
 
@@ -26,14 +24,6 @@ const carouselDetails = [
 ]
 
 export default function Home() {
-   const [loading, setLoading] = useState(true)
-
-   useEffect(() => setLoading(false), [])
-
-   if (loading) {
-      return <LoadingScreen />
-   }
-
    return (
       <>
          <Head>
@@ -41,27 +31,27 @@ export default function Home() {
             <meta name="description" content="Seano fro clothes and accesories all ranges and colors" />
          </Head>
 
-         <section className="w-full max-w-7xl lg:mx-auto mt-10 p-2">
+         <section className="w-full max-w-7xl mx-auto mt-10 p-1 min-h-[460px]">
             <CarouselImages carouselDetails={carouselDetails} />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
+         <section className="w-full max-w-7xl mx-auto px-2  mt-16 py-5 min-h-[300px]">
             <ShopByCategories />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-16 py-5">
+         <section className="w-full max-w-7xl mx-auto px-2  mt-16 py-5 min-h-[460px]">
             <TrendingProduct />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-16 py-10 md:py-24">
+         <section className="w-full max-w-7xl mx-auto px-2  mt-16 py-10 md:py-24 min-h-[200px]">
             <Services />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+         <section className="w-full max-w-7xl mx-auto px-2  mt-10 py-5 min-h-[460px]">
             <ShopByCollections />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-10 md:py-24">
+         <section className="w-full max-w-7xl mx-auto px-2  mt-10 py-10 md:py-24 min-h-[460px]">
             <Discount />
          </section>
       </>

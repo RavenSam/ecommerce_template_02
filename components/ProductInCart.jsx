@@ -35,19 +35,19 @@ export default function ProductInCart({ setOpen }) {
                                  <p className="ml-4">${product.price}</p>
                               </div>
                               <p className="mt-1 text-sm text-gray-500 space-x-2">
+                                 <span className="capitalize">{product.qty}</span>
+                                 <span>&#8226;</span>
                                  <span className="capitalize">{product.varient.color.color}</span>
                                  <span>&#8226;</span>
                                  <span className="uppercase">{product.varient.size}</span>
                               </p>
                            </div>
-                           <div className="flex-1 flex items-end justify-between text-sm">
-                              <p className="text-gray-500">Qty : {product.qty}</p>
-
-                              <div className="flex">
+                           <div className="">
+                              <div className="text-right">
                                  <button
                                     onClick={() => removeCartItem(product.cartId)}
                                     type="button"
-                                    className="font-medium text-pink-500 hover:text-pink-800"
+                                    className="text-pink-500 hover:text-pink-800"
                                  >
                                     <TrashIcon className="h-5 w-5" />
                                  </button>

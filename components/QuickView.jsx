@@ -9,11 +9,6 @@ export default function QuickView({ id }) {
    const [open, setOpen] = useState(false)
    const cancelButtonRef = useRef()
 
-   useEffect(async () => {
-      //const {data} = getProduct(id)
-      // setProduct(data)
-   }, [])
-
    return (
       <>
          <button
