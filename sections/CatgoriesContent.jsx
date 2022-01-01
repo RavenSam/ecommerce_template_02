@@ -30,10 +30,10 @@ export default function CatgoriesContent({ categories }) {
                               <Image src={cat.image} alt={cat.name} layout="fill" objectFit="cover" />
                               <div className="absolute inset-0 bg-black bg-opacity-75" />
 
-                              <div className="text-white text-center w-full absolute bottom-0 left-0 p-4 transform translate-y-[70%] group-hover:translate-y-0 transition duration-300 ease-in">
+                              <div className="text-white text-center w-full absolute bottom-0 left-0 p-4 md:transform md:translate-y-[70%] group-hover:translate-y-0 transition duration-300 ease-in">
                                  <h3 className="text-xl font-semibold tracking-wider mb-4 capitalize">{cat.name}</h3>
 
-                                 <div className="transform translate-y-full opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
+                                 <div className="md:transform md:translate-y-full md:opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in">
                                     <p className="max-w-sm mx-auto">{cat.description}</p>
 
                                     <button className="btn-t mt-4">Explore now</button>
