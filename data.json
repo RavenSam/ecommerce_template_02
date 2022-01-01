@@ -5,7 +5,7 @@
             {
                "id":"1",
                "name":"women",
-               "description":"A stunning notebook set that will inspire all writers!",
+               "description":"Shop the Latest Designer Clothing for Women Online",
                "slug":"women",
                "subcategories":["shoe", "shirt", "hat", "jacket", "accessorie", "pant"],
                "image":"/assets/women.jpg"
@@ -13,7 +13,7 @@
             {
                "id":"2",
                "name":"men",
-               "description":"A stunning notebook set that will inspire all writers!",
+               "description":"Latest styles in men's clothing featuring on-trend men's fashion and clothing,",
                "slug":"men",
                "subcategories":["shoe", "shirt", "hat", "jacket", "accessorie", "pant"],
                "image":"/assets/men-2.jpg"
@@ -21,7 +21,7 @@
             {
                "id":"3",
                "name":"kids",
-               "description":"A stunning notebook set that will inspire all writers!",
+               "description":"Find the kid's clothing you need on sale in our children's clothing store",
                "slug":"kids",
                "subcategories":["shoe", "shirt", "hat", "jacket", "accessorie", "pant"],
                "image":"/assets/kids.jpg"
@@ -29,7 +29,7 @@
             {
                "id":"4",
                "name":"pets",
-               "description":"A stunning notebook set that will inspire all writers!",
+               "description":"Keep your best friend looking fashionable with the latest pets clothes",
                "slug":"pets",
                "subcategories":["toys", "food", "clothes"],
                "image":"/assets/pets.jpg"
