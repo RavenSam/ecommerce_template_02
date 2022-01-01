@@ -11,11 +11,11 @@ export default function Categories({ categories }) {
             <meta name="description" content="All of our product categories" />
          </Head>
 
-         <section className="w-full max-w-7xl mx-auto mt-5 px-2  py-5">
+         <section className="w-full max-w-7xl mx-auto mt-5 px-2  py-5 min-h-[200px] ">
             <Banner title="Explore by category" />
          </section>
 
-         <section className="w-full max-w-7xl mx-auto mt-5 px-2  py-4">
+         <section className="w-full max-w-7xl mx-auto mt-5 px-2  py-4 min-h-[350px] ">
             <CatgoriesContent categories={categories} />
          </section>
       </>

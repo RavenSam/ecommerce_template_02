@@ -6,7 +6,7 @@ export default function ProductList({ product = {} }) {
    return (
       <div className="flex w-full border rounded-md shadow">
          <div className="relative flex-shrink-0 my-auto w-36 h-36 border border-gray-200 rounded-md overflow-hidden">
-            <Image src="/products/shirt.png" alt={product.title} layout="fill" objectFit="cover" />
+            <Image src={product.featuredImage} alt={product.title} layout="fill" objectFit="contain" />
          </div>
 
          <div className="ml-4 p-4 flex-1 flex flex-col">
@@ -23,7 +23,7 @@ export default function ProductList({ product = {} }) {
             <div>
                <div className="flex justify-between text-base font-medium text-gray-900">
                   <Link href={`/products/${product.id}`} passHref>
-                     <a className="font-semibold text-lg md:text-xl leading-3">{product.name || "Name"}</a>
+                     <a className="font-semibold md:text-lg leading-3">{product.name || "Name"}</a>
                   </Link>
                   <p className="ml-4">${product.price || 18.89}</p>
                </div>

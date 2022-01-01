@@ -10,15 +10,10 @@ export default function ProductCard({ product = {} }) {
    const [cart, setCart] = useRecoilState(cartState)
 
    return (
-      <div className=" relative group p-4 rounded-md min-w-[250px] max-w-[300px]  overflow-hidden cursor-pointer">
+      <div className=" relative group p-4 rounded-md min-w-[230px] max-w-[300px]  overflow-hidden cursor-pointer">
          <div className="w-full  overflow-hidden h-64 ">
             <div className="relative w-full h-full ">
-               <Image
-                  src={product.featuredImage || "/products/shirt.png"}
-                  alt="product"
-                  layout="fill"
-                  objectFit="contain"
-               />
+               <Image src={product.featuredImage} alt="product" layout="fill" objectFit="contain" />
             </div>
          </div>
 

@@ -38,19 +38,19 @@ export default function Product({ product }) {
             <meta name="description" content={product.description} />
          </Head>
 
-         <section className="lg:container lg:mx-auto  mt-10 py-5">
+         <section className="w-full max-w-7xl mx-auto mt-10 py-5  min-h-[500px]">
             <ProductDetails colors={colors} productColor={productColor} setProductColor={setProductColor} />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+         <section className=" w-full max-w-7xl mx-auto px-4 mt-10 py-5 min-h-[200px]">
             <ProductDescriptions />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+         <section className=" w-full max-w-7xl mx-auto px-4 mt-10 py-5 min-h-[130px]">
             <Reviews />
          </section>
 
-         <section className="px-4 lg:container lg:mx-auto mt-10 py-5">
+         <section className=" w-full max-w-7xl mx-auto px-4 mt-10 py-5 min-h-[400px]">
             <SimilarProduct />
          </section>
       </>

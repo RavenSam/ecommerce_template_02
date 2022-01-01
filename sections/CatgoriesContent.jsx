@@ -6,10 +6,10 @@ export default function CatgoriesContent({ categories }) {
    return (
       <>
          <div className="grid grid-cols-12 gap-4">
-            <div className="hidden sm:block col-span-3 text-gray-500">
+            <div className="hidden sm:block col-span-3 text-gray-500 px-4">
                <h2 className="h3 text-gray-700">Categories</h2>
 
-               <div className="max-w-[15rem] mt-6">
+               <div className="max-w-[15rem] mt-6 ">
                   {categories.map((item, i) => (
                      <Disclus
                         key={i}
