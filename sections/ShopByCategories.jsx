@@ -18,23 +18,27 @@ export default function ShopByCategories() {
       speed: 500,
       slidesToShow: 2.5,
       slidesToScroll: 1,
+      initialSlide: 0,
       responsive: [
          {
             breakpoint: 1118,
             settings: {
                slidesToShow: 2.1,
+               slidesToScroll: 1,
             },
          },
          {
             breakpoint: 920,
             settings: {
                slidesToShow: 1.8,
+               slidesToScroll: 1,
             },
          },
          {
             breakpoint: 800,
             settings: {
                slidesToShow: 1.2,
+               slidesToScroll: 1,
             },
          },
 
@@ -42,6 +46,7 @@ export default function ShopByCategories() {
             breakpoint: 700,
             settings: {
                slidesToShow: 1,
+               slidesToScroll: 1,
             },
          },
       ],

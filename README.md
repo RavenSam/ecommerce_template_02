@@ -4,7 +4,17 @@ An E-commerce project created using the [NextJS](https://nextjs.org) and [Tailwi
 
 [Website Demo](https://seano.vercel.app/)
 
+### Home Page
+
 ![Seano frontstore screenshots](https://raw.githubusercontent.com/RavenSam/seano/main/public/screenshots/seano%20fronstore%20screenshot%20.png)
+
+### Product Page
+
+![enter image description here](https://raw.githubusercontent.com/RavenSam/seano/main/public/screenshots/seano%20product%20screenshot%201.png)
+
+### Category Page
+
+![enter image description here](https://raw.githubusercontent.com/RavenSam/seano/main/public/screenshots/seano%20category%20screenshot%201.png)
 
 ## Installation
 
@@ -35,14 +45,14 @@ yarn dev
 
 ### Pages
 
--  Home page
--  Product Page
--  Categories page
--  Category page
--  Checkout page
--  Log in page
--  Sign up page
--  Reset password page
--  Contact page
--  About Page
--  Search Page
+- Home page
+- Product Page
+- Categories page
+- Category page
+- Checkout page
+- Log in page
+- Sign up page
+- Reset password page
+- Contact page
+- About Page
+- Search Page
