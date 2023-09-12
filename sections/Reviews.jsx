@@ -1,61 +1,23 @@
 import { useEffect, useState } from "react"
 import { Pagination, Review } from "../components"
 
-// const clientsReviews = [
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 1",
-//       rating: 5,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 2",
-//       rating: 5,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 3",
-//       rating: 5,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 4",
-//       rating: 4,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 5",
-//       rating: 5,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-//    {
-//       image: "/user.jpg",
-//       name: "john doe 6",
-//       rating: 4,
-//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-//    },
-// ]
 
 const clientsReviews = [
    {
       image: "/user.jpg",
-      name: "Alice",
+      name: "Carl H.",
       rating: 4.5,
       content: "I love this clothing! It's stylish and comfortable.",
    },
    {
       image: "/user-2.jpg",
-      name: "Bob",
+      name: "Alice",
       rating: 5,
       content: "Amazing quality! I can't believe how well-made it is.",
    },
    {
       image: "/user-3.jpg",
-      name: "Charlie",
+      name: "Charlie Reymon",
       rating: 3,
       content: "It's decent, but I expected better for the price.",
    },
@@ -75,7 +37,7 @@ const clientsReviews = [
 
 export default function Reviews() {
    const [currentPage, setCurrentPage] = useState(1)
-   const [reviews, setReviews] = useState(clientsReviews.slice(0, 4))
+   const [reviews, setReviews] = useState(clientsReviews.slice(0, 5))
 
    const totalPages =
       clientsReviews.length / 4 > Math.floor(clientsReviews.length / 4)
