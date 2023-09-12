@@ -1,42 +1,75 @@
 import { useEffect, useState } from "react"
 import { Pagination, Review } from "../components"
 
+// const clientsReviews = [
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 1",
+//       rating: 5,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 2",
+//       rating: 5,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 3",
+//       rating: 5,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 4",
+//       rating: 4,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 5",
+//       rating: 5,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+//    {
+//       image: "/user.jpg",
+//       name: "john doe 6",
+//       rating: 4,
+//       content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+//    },
+// ]
+
 const clientsReviews = [
    {
       image: "/user.jpg",
-      name: "john doe 1",
-      rating: 5,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+      name: "Alice",
+      rating: 4.5,
+      content: "I love this clothing! It's stylish and comfortable.",
    },
    {
-      image: "/user.jpg",
-      name: "john doe 2",
+      image: "/user-2.jpg",
+      name: "Bob",
       rating: 5,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+      content: "Amazing quality! I can't believe how well-made it is.",
    },
    {
-      image: "/user.jpg",
-      name: "john doe 3",
-      rating: 5,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+      image: "/user-3.jpg",
+      name: "Charlie",
+      rating: 3,
+      content: "It's decent, but I expected better for the price.",
    },
    {
-      image: "/user.jpg",
-      name: "john doe 4",
+      image: "/user-4.jpg",
+      name: "David",
       rating: 4,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+      content: "Fits perfectly, and the color is exactly as shown.",
    },
    {
-      image: "/user.jpg",
-      name: "john doe 5",
-      rating: 5,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
-   },
-   {
-      image: "/user.jpg",
-      name: "john doe 6",
-      rating: 4,
-      content: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cumque impedit reprehenderit atque earum",
+      image: "/user-5.jpg",
+      name: "Eve",
+      rating: 4.5,
+      content: "Great value for the money. I'm very satisfied.",
    },
 ]
 
